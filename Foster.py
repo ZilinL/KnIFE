@@ -10,9 +10,9 @@ from network import common_network
 from alg.algs.base import Algorithm
 
 
-class Foster(Algorithm):
+class Knife(Algorithm):
     def __init__(self, args):
-        super(Foster, self).__init__(args)
+        super(Knife, self).__init__(args)
         self.args = args
         self.featurizer = get_fea(args)
         self.classifier = common_network.feat_classifier(
