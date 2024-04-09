@@ -8,6 +8,11 @@ alg/algs/Knife.py contains the core code of the proposed method, which includes 
 The graphical abstract is shown below:
 ![GA](https://github.com/ZilinL/KnIFE/assets/10232596/5509b800-2ae4-47cc-ab61-00a4d9d19d94)
 
+## Environments
+```python
+pip install -r requirements.txt
+```
+
 ## Run the code
 train_OpenBMI.py: A demo to run Knife on OpenBMI dataset.
 
