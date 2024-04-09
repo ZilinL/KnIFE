@@ -7,6 +7,6 @@ More complete files will be available soon. The graphical abstract is shown belo
 KnIFE extract domain-invariant features from both intra- and inter-domain viewpoints.
 
 ## Datasets
-1. [BCI competition IV-2b](https://www.bbci.de/competition/iv/#dataset2b)
-2. [BCI competition IV-2a](https://www.bbci.de/competition/iv/#dataset2a)
+1. [BCI competition IV-2a](https://www.bbci.de/competition/iv/#dataset2a)
+2. [BCI competition IV-2b](https://www.bbci.de/competition/iv/#dataset2b)
 4. [OpenBMI](http://gigadb.org/dataset/view/id/100542)
