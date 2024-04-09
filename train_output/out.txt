@@ -1,0 +1,4946 @@
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:ERM
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:office-home
+data_dir:./data/OfficeHome/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:resnet50
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:['Art', 'Clipart', 'Product', 'Real_World']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:65
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+class_loss:0.8354
+train_acc:0.7322,valid_acc:0.7103,target_acc:0.5303
+total cost time: 114.2835
+===========epoch 3===========
+class_loss:0.3339
+train_acc:0.9048,valid_acc:0.8033,target_acc:0.5604
+total cost time: 306.3038
+===========epoch 6===========
+class_loss:0.2314
+train_acc:0.9424,valid_acc:0.7941,target_acc:0.5406
+total cost time: 502.4604
+===========epoch 9===========
+class_loss:0.1369
+train_acc:0.9582,valid_acc:0.8264,target_acc:0.5554
+total cost time: 695.9906
+===========epoch 12===========
+class_loss:0.0941
+train_acc:0.9773,valid_acc:0.8310,target_acc:0.5830
+total cost time: 893.3227
+===========epoch 15===========
+class_loss:0.0635
+train_acc:0.9817,valid_acc:0.8398,target_acc:0.5983
+total cost time: 1087.2047
+===========epoch 18===========
+class_loss:0.0440
+train_acc:0.9842,valid_acc:0.8371,target_acc:0.5917
+total cost time: 1280.6896
+===========epoch 21===========
+class_loss:0.0655
+train_acc:0.9861,valid_acc:0.8443,target_acc:0.5917
+total cost time: 1474.2292
+===========epoch 24===========
+class_loss:0.0550
+train_acc:0.9863,valid_acc:0.8412,target_acc:0.5896
+total cost time: 1668.2723
+===========epoch 27===========
+class_loss:0.1058
+train_acc:0.9908,valid_acc:0.8553,target_acc:0.6086
+total cost time: 1861.4598
+===========epoch 30===========
+class_loss:0.1014
+train_acc:0.9893,valid_acc:0.8454,target_acc:0.6073
+total cost time: 2055.8258
+===========epoch 33===========
+class_loss:0.0609
+train_acc:0.9866,valid_acc:0.8264,target_acc:0.6115
+total cost time: 2249.6629
+===========epoch 36===========
+class_loss:0.0240
+train_acc:0.9904,valid_acc:0.8473,target_acc:0.5999
+total cost time: 2442.7088
+===========epoch 39===========
+class_loss:0.0319
+train_acc:0.9860,valid_acc:0.8454,target_acc:0.5851
+total cost time: 2636.0074
+===========epoch 42===========
+class_loss:0.0351
+train_acc:0.9887,valid_acc:0.8481,target_acc:0.6102
+total cost time: 2829.9919
+===========epoch 45===========
+class_loss:0.0132
+train_acc:0.9910,valid_acc:0.8378,target_acc:0.5822
+total cost time: 3023.8458
+===========epoch 48===========
+class_loss:0.0329
+train_acc:0.9917,valid_acc:0.8439,target_acc:0.6098
+total cost time: 3218.0992
+===========epoch 51===========
+class_loss:0.0317
+train_acc:0.9927,valid_acc:0.8412,target_acc:0.5843
+total cost time: 3411.4955
+===========epoch 54===========
+class_loss:0.0217
+train_acc:0.9896,valid_acc:0.8401,target_acc:0.6016
+total cost time: 3604.8544
+===========epoch 57===========
+class_loss:0.0189
+train_acc:0.9870,valid_acc:0.8298,target_acc:0.5468
+total cost time: 3798.4972
+===========epoch 60===========
+class_loss:0.0244
+train_acc:0.9917,valid_acc:0.8371,target_acc:0.5929
+total cost time: 3995.4705
+===========epoch 63===========
+class_loss:0.0317
+train_acc:0.9911,valid_acc:0.8386,target_acc:0.5649
+total cost time: 4217.0871
+===========epoch 66===========
+class_loss:0.0184
+train_acc:0.9835,valid_acc:0.8249,target_acc:0.5653
+total cost time: 4417.6366
+===========epoch 69===========
+class_loss:0.0929
+train_acc:0.9836,valid_acc:0.8169,target_acc:0.5340
+total cost time: 4611.3223
+===========epoch 72===========
+class_loss:0.0422
+train_acc:0.9852,valid_acc:0.8256,target_acc:0.5546
+total cost time: 4814.8998
+===========epoch 75===========
+class_loss:0.0671
+train_acc:0.9858,valid_acc:0.8268,target_acc:0.5678
+total cost time: 5009.3606
+===========epoch 78===========
+class_loss:0.1014
+train_acc:0.9840,valid_acc:0.8298,target_acc:0.5336
+total cost time: 5202.5475
+===========epoch 81===========
+class_loss:0.0548
+train_acc:0.9848,valid_acc:0.8207,target_acc:0.5278
+total cost time: 5397.1527
+manually descrease lr
+===========epoch 84===========
+class_loss:0.0837
+train_acc:0.9868,valid_acc:0.8378,target_acc:0.5698
+total cost time: 5591.6577
+===========epoch 87===========
+class_loss:0.0311
+train_acc:0.9938,valid_acc:0.8511,target_acc:0.5958
+total cost time: 5812.4433
+===========epoch 90===========
+class_loss:0.0139
+train_acc:0.9930,valid_acc:0.8553,target_acc:0.6012
+total cost time: 6012.5600
+===========epoch 93===========
+class_loss:0.0104
+train_acc:0.9940,valid_acc:0.8580,target_acc:0.5991
+total cost time: 6209.1720
+===========epoch 96===========
+class_loss:0.0041
+train_acc:0.9941,valid_acc:0.8572,target_acc:0.6123
+total cost time: 6407.2800
+===========epoch 99===========
+class_loss:0.0096
+train_acc:0.9932,valid_acc:0.8614,target_acc:0.6069
+total cost time: 6605.7593
+===========epoch 102===========
+class_loss:0.0217
+train_acc:0.9942,valid_acc:0.8603,target_acc:0.5983
+total cost time: 6802.5934
+===========epoch 105===========
+class_loss:0.0095
+train_acc:0.9935,valid_acc:0.8603,target_acc:0.5979
+total cost time: 6999.0306
+manually descrease lr
+===========epoch 108===========
+class_loss:0.0057
+train_acc:0.9936,valid_acc:0.8603,target_acc:0.6012
+total cost time: 7197.4717
+===========epoch 111===========
+class_loss:0.0101
+train_acc:0.9946,valid_acc:0.8591,target_acc:0.6012
+total cost time: 7393.3735
+===========epoch 114===========
+class_loss:0.0222
+train_acc:0.9937,valid_acc:0.8599,target_acc:0.6028
+total cost time: 7587.4666
+===========epoch 117===========
+class_loss:0.0115
+train_acc:0.9936,valid_acc:0.8611,target_acc:0.6016
+total cost time: 7781.8594
+===========epoch 119===========
+class_loss:0.0047
+train_acc:0.9940,valid_acc:0.8610,target_acc:0.6016
+total cost time: 7936.6805
+valid acc: 0.8614
+DG result: 0.6069
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:ERM
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:office-home
+data_dir:./data/OfficeHome/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:resnet50
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:['Art', 'Clipart', 'Product', 'Real_World']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:65
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+class_loss:0.8354
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:ERM
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:office-home
+data_dir:./data/OfficeHome/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:resnet50
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:['Art', 'Clipart', 'Product', 'Real_World']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:65
+domain_num:4
+
+===========start training===========
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:ERM
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:office-home
+data_dir:./data/OfficeHome/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:resnet50
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:['Art', 'Clipart', 'Product', 'Real_World']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:65
+domain_num:4
+
+===========start training===========
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:MMD
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:office-home
+data_dir:./data/OfficeHome/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:resnet50
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:['Art', 'Clipart', 'Product', 'Real_World']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:65
+domain_num:4
+
+===========start training===========
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:MMD
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:office-home
+data_dir:./data/OfficeHome/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:resnet50
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:['Art', 'Clipart', 'Product', 'Real_World']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:65
+domain_num:4
+
+===========start training===========
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:MMD
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:office-home
+data_dir:./data/OfficeHome/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:resnet50
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:['Art', 'Clipart', 'Product', 'Real_World']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:65
+domain_num:4
+
+===========start training===========
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+No such dataset exists!
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:MMD
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:resnet50
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9']], 'BCICIV-2a-9domain': ['S0', 'S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:3
+
+===========start training===========
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Traceback (most recent call last):
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_trace_dispatch_regular.py", line 359, in __call__
+    is_stepping = pydev_step_cmd != -1
+RecursionError: maximum recursion depth exceeded in comparison
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Traceback (most recent call last):
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_trace_dispatch_regular.py", line 359, in __call__
+    is_stepping = pydev_step_cmd != -1
+RecursionError: maximum recursion depth exceeded in comparison
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:MMD
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9']], 'BCICIV-2a-9domain': ['S0', 'S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:3
+
+===========start training===========
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:MMD
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9']], 'BCICIV-2a-9domain': ['S0', 'S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:3
+
+===========start training===========
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:MMD
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9']], 'BCICIV-2a-9domain': ['S0', 'S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:3
+
+===========start training===========
+===========epoch 0===========
+class_loss:1.2363,mmd_loss:0.3503,total_loss:1.5867
+train_acc:0.4805,valid_acc:0.3988,target_acc:0.3762
+total cost time: 46.0236
+===========epoch 3===========
+class_loss:0.8117,mmd_loss:0.3513,total_loss:1.1630
+train_acc:0.6360,valid_acc:0.5462,target_acc:0.4294
+total cost time: 61.3307
+===========epoch 6===========
+class_loss:1.0250,mmd_loss:0.3421,total_loss:1.3671
+train_acc:0.6910,valid_acc:0.5867,target_acc:0.4606
+total cost time: 76.2558
+===========epoch 9===========
+class_loss:0.8123,mmd_loss:0.3384,total_loss:1.1506
+train_acc:0.7250,valid_acc:0.6156,target_acc:0.4803
+total cost time: 91.2619
+===========epoch 12===========
+class_loss:0.9073,mmd_loss:0.3350,total_loss:1.2423
+train_acc:0.7757,valid_acc:0.6272,target_acc:0.5012
+total cost time: 106.5245
+===========epoch 15===========
+class_loss:0.8710,mmd_loss:0.3360,total_loss:1.2069
+train_acc:0.7504,valid_acc:0.6214,target_acc:0.5324
+total cost time: 121.8987
+===========epoch 18===========
+class_loss:0.7679,mmd_loss:0.3383,total_loss:1.1061
+train_acc:0.7525,valid_acc:0.6329,target_acc:0.4769
+total cost time: 137.4546
+===========epoch 21===========
+class_loss:0.8053,mmd_loss:0.3244,total_loss:1.1297
+train_acc:0.7706,valid_acc:0.6387,target_acc:0.4850
+total cost time: 152.8341
+===========epoch 24===========
+class_loss:0.6862,mmd_loss:0.3324,total_loss:1.0186
+train_acc:0.7851,valid_acc:0.6329,target_acc:0.4896
+total cost time: 168.3941
+===========epoch 27===========
+class_loss:0.6956,mmd_loss:0.3271,total_loss:1.0227
+train_acc:0.7685,valid_acc:0.6416,target_acc:0.5127
+total cost time: 183.8289
+===========epoch 30===========
+class_loss:0.7147,mmd_loss:0.3291,total_loss:1.0438
+train_acc:0.7598,valid_acc:0.6416,target_acc:0.4803
+total cost time: 199.1441
+===========epoch 33===========
+class_loss:0.6089,mmd_loss:0.3241,total_loss:0.9330
+train_acc:0.8068,valid_acc:0.6416,target_acc:0.5266
+total cost time: 214.4766
+===========epoch 36===========
+class_loss:0.6076,mmd_loss:0.3284,total_loss:0.9360
+train_acc:0.8017,valid_acc:0.6272,target_acc:0.4803
+total cost time: 229.8993
+===========epoch 39===========
+class_loss:0.5842,mmd_loss:0.3248,total_loss:0.9090
+train_acc:0.8039,valid_acc:0.6676,target_acc:0.4977
+total cost time: 246.0067
+===========epoch 42===========
+class_loss:0.6704,mmd_loss:0.3219,total_loss:0.9923
+train_acc:0.8278,valid_acc:0.6647,target_acc:0.5231
+total cost time: 261.8353
+===========epoch 45===========
+class_loss:0.7069,mmd_loss:0.3322,total_loss:1.0390
+train_acc:0.8242,valid_acc:0.6561,target_acc:0.5150
+total cost time: 277.0781
+===========epoch 48===========
+class_loss:0.9302,mmd_loss:0.3297,total_loss:1.2599
+train_acc:0.7909,valid_acc:0.6301,target_acc:0.5208
+total cost time: 292.2891
+===========epoch 51===========
+class_loss:0.7511,mmd_loss:0.3264,total_loss:1.0776
+train_acc:0.7909,valid_acc:0.6301,target_acc:0.5243
+total cost time: 307.5818
+===========epoch 54===========
+class_loss:0.4633,mmd_loss:0.3258,total_loss:0.7890
+train_acc:0.8148,valid_acc:0.6590,target_acc:0.5174
+total cost time: 323.8501
+===========epoch 57===========
+class_loss:0.5061,mmd_loss:0.3311,total_loss:0.8372
+train_acc:0.8054,valid_acc:0.6387,target_acc:0.4896
+total cost time: 339.1635
+===========epoch 60===========
+class_loss:0.4766,mmd_loss:0.3174,total_loss:0.7941
+train_acc:0.8379,valid_acc:0.6243,target_acc:0.5301
+total cost time: 353.1539
+===========epoch 63===========
+class_loss:0.5809,mmd_loss:0.3195,total_loss:0.9005
+train_acc:0.8205,valid_acc:0.6618,target_acc:0.5185
+total cost time: 368.7943
+===========epoch 66===========
+class_loss:0.6172,mmd_loss:0.3209,total_loss:0.9381
+train_acc:0.8263,valid_acc:0.6474,target_acc:0.5150
+total cost time: 383.8732
+===========epoch 69===========
+class_loss:0.7855,mmd_loss:0.3156,total_loss:1.1010
+train_acc:0.8003,valid_acc:0.6561,target_acc:0.5093
+total cost time: 399.6623
+===========epoch 72===========
+class_loss:0.5801,mmd_loss:0.3299,total_loss:0.9100
+train_acc:0.8169,valid_acc:0.6445,target_acc:0.5081
+total cost time: 415.5847
+===========epoch 75===========
+class_loss:0.7636,mmd_loss:0.3201,total_loss:1.0837
+train_acc:0.7902,valid_acc:0.6069,target_acc:0.4919
+total cost time: 431.5849
+===========epoch 78===========
+class_loss:0.7960,mmd_loss:0.3250,total_loss:1.1210
+train_acc:0.8025,valid_acc:0.6561,target_acc:0.4664
+total cost time: 447.1163
+===========epoch 81===========
+class_loss:0.7181,mmd_loss:0.3143,total_loss:1.0324
+train_acc:0.8350,valid_acc:0.6185,target_acc:0.4803
+total cost time: 462.7683
+manually descrease lr
+===========epoch 84===========
+class_loss:0.5799,mmd_loss:0.3215,total_loss:0.9015
+train_acc:0.7996,valid_acc:0.6185,target_acc:0.4780
+total cost time: 478.4182
+===========epoch 87===========
+class_loss:0.6481,mmd_loss:0.3180,total_loss:0.9661
+train_acc:0.8509,valid_acc:0.6416,target_acc:0.5162
+total cost time: 493.7662
+===========epoch 90===========
+class_loss:0.5704,mmd_loss:0.3217,total_loss:0.8922
+train_acc:0.8495,valid_acc:0.6329,target_acc:0.5104
+total cost time: 508.6446
+===========epoch 93===========
+class_loss:0.7060,mmd_loss:0.3240,total_loss:1.0301
+train_acc:0.8575,valid_acc:0.6590,target_acc:0.5162
+total cost time: 524.0463
+===========epoch 96===========
+class_loss:0.5245,mmd_loss:0.3171,total_loss:0.8416
+train_acc:0.8444,valid_acc:0.6358,target_acc:0.5139
+total cost time: 539.5978
+===========epoch 99===========
+class_loss:0.5110,mmd_loss:0.3197,total_loss:0.8308
+train_acc:0.8379,valid_acc:0.6445,target_acc:0.5035
+total cost time: 555.3914
+===========epoch 102===========
+class_loss:0.4113,mmd_loss:0.3212,total_loss:0.7325
+train_acc:0.8466,valid_acc:0.6445,target_acc:0.5127
+total cost time: 571.0628
+===========epoch 105===========
+class_loss:0.5207,mmd_loss:0.3208,total_loss:0.8416
+train_acc:0.8625,valid_acc:0.6561,target_acc:0.5116
+total cost time: 585.5140
+manually descrease lr
+===========epoch 108===========
+class_loss:0.6349,mmd_loss:0.3214,total_loss:0.9563
+train_acc:0.8459,valid_acc:0.6243,target_acc:0.5000
+total cost time: 600.1098
+===========epoch 111===========
+class_loss:0.6450,mmd_loss:0.3201,total_loss:0.9651
+train_acc:0.8611,valid_acc:0.6416,target_acc:0.5081
+total cost time: 615.6130
+===========epoch 114===========
+class_loss:0.5707,mmd_loss:0.3192,total_loss:0.8899
+train_acc:0.8575,valid_acc:0.6474,target_acc:0.5069
+total cost time: 630.6793
+===========epoch 117===========
+class_loss:0.5610,mmd_loss:0.3258,total_loss:0.8867
+train_acc:0.8654,valid_acc:0.6618,target_acc:0.5104
+total cost time: 646.2579
+===========epoch 119===========
+class_loss:0.5934,mmd_loss:0.3252,total_loss:0.9186
+train_acc:0.8625,valid_acc:0.6445,target_acc:0.5185
+total cost time: 659.1209
+valid acc: 0.6676
+DG result: 0.4977
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:ERM
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9']], 'BCICIV-2a-9domain': ['S0', 'S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:3
+
+===========start training===========
+===========epoch 0===========
+class_loss:1.2101
+train_acc:0.5152,valid_acc:0.4249,target_acc:0.4178
+total cost time: 9.1739
+===========epoch 3===========
+class_loss:0.8830
+train_acc:0.6585,valid_acc:0.5751,target_acc:0.4711
+total cost time: 22.0035
+===========epoch 6===========
+class_loss:0.8663
+train_acc:0.7221,valid_acc:0.6387,target_acc:0.4884
+total cost time: 34.5469
+===========epoch 9===========
+class_loss:0.8022
+train_acc:0.7699,valid_acc:0.6618,target_acc:0.5116
+total cost time: 46.6160
+===========epoch 12===========
+class_loss:0.8787
+train_acc:0.7779,valid_acc:0.6647,target_acc:0.5116
+total cost time: 59.1860
+===========epoch 15===========
+class_loss:0.8220
+train_acc:0.7547,valid_acc:0.6329,target_acc:0.4896
+total cost time: 71.2168
+===========epoch 18===========
+class_loss:0.7846
+train_acc:0.8046,valid_acc:0.6792,target_acc:0.4942
+total cost time: 83.8707
+===========epoch 21===========
+class_loss:0.6840
+train_acc:0.8017,valid_acc:0.6416,target_acc:0.5127
+total cost time: 95.8089
+===========epoch 24===========
+class_loss:0.5334
+train_acc:0.7988,valid_acc:0.6474,target_acc:0.4965
+total cost time: 107.8344
+===========epoch 27===========
+class_loss:0.7048
+train_acc:0.8104,valid_acc:0.6532,target_acc:0.5220
+total cost time: 120.0563
+===========epoch 30===========
+class_loss:0.7431
+train_acc:0.7952,valid_acc:0.6445,target_acc:0.4826
+total cost time: 132.0870
+===========epoch 33===========
+class_loss:0.7570
+train_acc:0.7865,valid_acc:0.6387,target_acc:0.5081
+total cost time: 144.3462
+===========epoch 36===========
+class_loss:0.6952
+train_acc:0.8061,valid_acc:0.6445,target_acc:0.5012
+total cost time: 156.3938
+===========epoch 39===========
+class_loss:0.6993
+train_acc:0.8278,valid_acc:0.6532,target_acc:0.5266
+total cost time: 168.3534
+===========epoch 42===========
+class_loss:0.6722
+train_acc:0.7988,valid_acc:0.6416,target_acc:0.4931
+total cost time: 180.4388
+===========epoch 45===========
+class_loss:0.6857
+train_acc:0.8017,valid_acc:0.6272,target_acc:0.5231
+total cost time: 192.5914
+===========epoch 48===========
+class_loss:0.7965
+train_acc:0.8148,valid_acc:0.6329,target_acc:0.5498
+total cost time: 204.8000
+===========epoch 51===========
+class_loss:0.6011
+train_acc:0.8097,valid_acc:0.6676,target_acc:0.5104
+total cost time: 217.3375
+===========epoch 54===========
+class_loss:0.5835
+train_acc:0.8068,valid_acc:0.6561,target_acc:0.5255
+total cost time: 229.9268
+===========epoch 57===========
+class_loss:0.6074
+train_acc:0.8191,valid_acc:0.6561,target_acc:0.5208
+total cost time: 242.0749
+===========epoch 60===========
+class_loss:0.4520
+train_acc:0.8184,valid_acc:0.6185,target_acc:0.5012
+total cost time: 253.9638
+===========epoch 63===========
+class_loss:0.6175
+train_acc:0.8133,valid_acc:0.6734,target_acc:0.5336
+total cost time: 266.2114
+===========epoch 66===========
+class_loss:0.5887
+train_acc:0.8169,valid_acc:0.6387,target_acc:0.5220
+total cost time: 278.6185
+===========epoch 69===========
+class_loss:0.8789
+train_acc:0.8220,valid_acc:0.6561,target_acc:0.5104
+total cost time: 290.9443
+===========epoch 72===========
+class_loss:0.5793
+train_acc:0.8133,valid_acc:0.6387,target_acc:0.5069
+total cost time: 303.2904
+===========epoch 75===========
+class_loss:0.6575
+train_acc:0.8177,valid_acc:0.6618,target_acc:0.5150
+total cost time: 315.6022
+===========epoch 78===========
+class_loss:0.4914
+train_acc:0.8336,valid_acc:0.6676,target_acc:0.5162
+total cost time: 327.5445
+===========epoch 81===========
+class_loss:0.7500
+train_acc:0.8452,valid_acc:0.6474,target_acc:0.4514
+total cost time: 339.8937
+manually descrease lr
+===========epoch 84===========
+class_loss:0.6120
+train_acc:0.8082,valid_acc:0.6445,target_acc:0.5023
+total cost time: 352.2617
+===========epoch 87===========
+class_loss:0.4597
+train_acc:0.8567,valid_acc:0.6705,target_acc:0.5405
+total cost time: 364.6601
+===========epoch 90===========
+class_loss:0.4347
+train_acc:0.8560,valid_acc:0.6792,target_acc:0.5370
+total cost time: 377.0203
+===========epoch 93===========
+class_loss:0.5887
+train_acc:0.8618,valid_acc:0.6908,target_acc:0.5243
+total cost time: 389.3829
+===========epoch 96===========
+class_loss:0.6580
+train_acc:0.8567,valid_acc:0.6792,target_acc:0.5197
+total cost time: 401.8389
+===========epoch 99===========
+class_loss:0.7038
+train_acc:0.8502,valid_acc:0.6792,target_acc:0.5312
+total cost time: 414.4823
+===========epoch 102===========
+class_loss:0.4694
+train_acc:0.8611,valid_acc:0.6821,target_acc:0.5139
+total cost time: 426.6954
+===========epoch 105===========
+class_loss:0.5409
+train_acc:0.8647,valid_acc:0.6763,target_acc:0.5278
+total cost time: 439.1312
+manually descrease lr
+===========epoch 108===========
+class_loss:0.4922
+train_acc:0.8647,valid_acc:0.6763,target_acc:0.5058
+total cost time: 451.5727
+===========epoch 111===========
+class_loss:0.5787
+train_acc:0.8690,valid_acc:0.6792,target_acc:0.5162
+total cost time: 463.5566
+===========epoch 114===========
+class_loss:0.4788
+train_acc:0.8690,valid_acc:0.6850,target_acc:0.5220
+total cost time: 476.1446
+===========epoch 117===========
+class_loss:0.6190
+train_acc:0.8755,valid_acc:0.6850,target_acc:0.5231
+total cost time: 487.7411
+===========epoch 119===========
+class_loss:0.4595
+train_acc:0.8603,valid_acc:0.6879,target_acc:0.5220
+total cost time: 498.2373
+valid acc: 0.6908
+DG result: 0.5243
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:DIFEX
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9']], 'BCICIV-2a-9domain': ['S0', 'S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:3
+
+start training fft teacher net
+epoch: 0, cls loss: 1.4507
+epoch: 100, cls loss: 1.3509
+epoch: 200, cls loss: 1.3486
+epoch: 300, cls loss: 1.3363
+epoch: 400, cls loss: 1.3916
+epoch: 500, cls loss: 1.3321
+epoch: 600, cls loss: 1.3509
+epoch: 700, cls loss: 1.3552
+epoch: 800, cls loss: 1.3767
+epoch: 900, cls loss: 1.3166
+epoch: 1000, cls loss: 1.2088
+epoch: 1100, cls loss: 1.2523
+epoch: 1200, cls loss: 1.2347
+epoch: 1300, cls loss: 1.3515
+epoch: 1400, cls loss: 1.2321
+epoch: 1500, cls loss: 1.1804
+epoch: 1600, cls loss: 1.3544
+epoch: 1700, cls loss: 1.3392
+epoch: 1800, cls loss: 1.2109
+epoch: 1900, cls loss: 1.3403
+epoch: 2000, cls loss: 1.2679
+epoch: 2100, cls loss: 1.3445
+epoch: 2200, cls loss: 1.1889
+epoch: 2300, cls loss: 1.2719
+epoch: 2400, cls loss: 1.1454
+epoch: 2500, cls loss: 1.3248
+epoch: 2600, cls loss: 1.1918
+epoch: 2700, cls loss: 1.0778
+epoch: 2800, cls loss: 1.3493
+epoch: 2900, cls loss: 1.1922
+epoch: 3000, cls loss: 1.0728
+epoch: 3100, cls loss: 1.2098
+epoch: 3200, cls loss: 1.3412
+epoch: 3300, cls loss: 1.1911
+epoch: 3400, cls loss: 1.1265
+epoch: 3500, cls loss: 1.1289
+epoch: 3600, cls loss: 1.2346
+epoch: 3700, cls loss: 1.1358
+epoch: 3800, cls loss: 1.3013
+epoch: 3900, cls loss: 1.2181
+epoch: 4000, cls loss: 1.1260
+epoch: 4100, cls loss: 1.2086
+epoch: 4200, cls loss: 1.2180
+epoch: 4300, cls loss: 1.2488
+epoch: 4400, cls loss: 1.1806
+epoch: 4500, cls loss: 1.0312
+epoch: 4600, cls loss: 1.1320
+epoch: 4700, cls loss: 1.1929
+epoch: 4800, cls loss: 1.1337
+epoch: 4900, cls loss: 1.2741
+epoch: 5000, cls loss: 1.1112
+epoch: 5100, cls loss: 1.1214
+epoch: 5200, cls loss: 1.3044
+epoch: 5300, cls loss: 1.2912
+epoch: 5400, cls loss: 1.0552
+epoch: 5500, cls loss: 1.1745
+epoch: 5600, cls loss: 1.2072
+epoch: 5700, cls loss: 1.1240
+epoch: 5800, cls loss: 1.2134
+epoch: 5900, cls loss: 1.2404
+epoch: 6000, cls loss: 1.3216
+epoch: 6100, cls loss: 1.1644
+epoch: 6200, cls loss: 1.2505
+epoch: 6300, cls loss: 1.1062
+epoch: 6400, cls loss: 1.2383
+epoch: 6500, cls loss: 1.1652
+epoch: 6600, cls loss: 1.3164
+epoch: 6700, cls loss: 1.2787
+epoch: 6800, cls loss: 1.2208
+epoch: 6900, cls loss: 1.1586
+epoch: 7000, cls loss: 1.1648
+epoch: 7100, cls loss: 1.2484
+epoch: 7200, cls loss: 1.1723
+epoch: 7300, cls loss: 1.3275
+epoch: 7400, cls loss: 1.3089
+epoch: 7500, cls loss: 1.0533
+epoch: 7600, cls loss: 1.1431
+epoch: 7700, cls loss: 1.0139
+epoch: 7800, cls loss: 1.0465
+epoch: 7900, cls loss: 1.1932
+epoch: 8000, cls loss: 1.1400
+epoch: 8100, cls loss: 1.1226
+epoch: 8200, cls loss: 1.1904
+epoch: 8300, cls loss: 1.0502
+epoch: 8400, cls loss: 1.0612
+epoch: 8500, cls loss: 1.1471
+epoch: 8600, cls loss: 1.2007
+epoch: 8700, cls loss: 1.0049
+epoch: 8800, cls loss: 1.0598
+epoch: 8900, cls loss: 1.1373
+epoch: 9000, cls loss: 1.1440
+epoch: 9100, cls loss: 1.1481
+epoch: 9200, cls loss: 1.1332
+epoch: 9300, cls loss: 1.0996
+epoch: 9400, cls loss: 1.0811
+epoch: 9500, cls loss: 1.1427
+epoch: 9600, cls loss: 1.2524
+epoch: 9700, cls loss: 1.1801
+epoch: 9800, cls loss: 1.1637
+epoch: 9900, cls loss: 1.1835
+epoch: 10000, cls loss: 1.1282
+epoch: 10100, cls loss: 1.0863
+epoch: 10200, cls loss: 1.0764
+epoch: 10300, cls loss: 1.1570
+epoch: 10400, cls loss: 1.0278
+epoch: 10500, cls loss: 1.1849
+epoch: 10600, cls loss: 1.1788
+epoch: 10700, cls loss: 1.0943
+epoch: 10800, cls loss: 1.1636
+epoch: 10900, cls loss: 1.0528
+epoch: 11000, cls loss: 1.0765
+epoch: 11100, cls loss: 1.3272
+epoch: 11200, cls loss: 1.0462
+epoch: 11300, cls loss: 0.9523
+epoch: 11400, cls loss: 1.0811
+epoch: 11500, cls loss: 1.1091
+epoch: 11600, cls loss: 1.1982
+epoch: 11700, cls loss: 1.1437
+epoch: 11800, cls loss: 1.0425
+epoch: 11900, cls loss: 1.1218
+epoch: 11999, cls loss: 1.0987
+complet time:163.4826
+===========start training===========
+===========epoch 0===========
+class_loss:1.3937,dist_loss:1.0803,exp_loss:-2.1979,align_loss:0.1786,total_loss:0.4547
+train_acc:0.4805,valid_acc:0.3844,target_acc:0.3762
+total cost time: 10.2684
+===========epoch 3===========
+class_loss:1.0164,dist_loss:1.1748,exp_loss:-2.2198,align_loss:0.1478,total_loss:0.1192
+train_acc:0.5955,valid_acc:0.5087,target_acc:0.4398
+total cost time: 24.0063
+===========epoch 6===========
+class_loss:0.9483,dist_loss:1.1793,exp_loss:-2.2731,align_loss:0.1398,total_loss:-0.0057
+train_acc:0.6346,valid_acc:0.5116,target_acc:0.4618
+total cost time: 37.9756
+===========epoch 9===========
+class_loss:0.9698,dist_loss:1.1922,exp_loss:-2.2264,align_loss:0.1260,total_loss:0.0615
+train_acc:0.6679,valid_acc:0.5520,target_acc:0.4734
+total cost time: 51.7957
+===========epoch 12===========
+class_loss:0.7825,dist_loss:1.1871,exp_loss:-2.2203,align_loss:0.1334,total_loss:-0.1173
+train_acc:0.7084,valid_acc:0.6069,target_acc:0.4896
+total cost time: 65.6481
+===========epoch 15===========
+class_loss:0.9139,dist_loss:1.1953,exp_loss:-2.2472,align_loss:0.1180,total_loss:-0.0201
+train_acc:0.6795,valid_acc:0.5954,target_acc:0.4757
+total cost time: 79.4994
+===========epoch 18===========
+class_loss:0.9594,dist_loss:1.1983,exp_loss:-2.2407,align_loss:0.1517,total_loss:0.0686
+train_acc:0.7200,valid_acc:0.6012,target_acc:0.4873
+total cost time: 93.9291
+===========epoch 21===========
+class_loss:0.7590,dist_loss:1.1718,exp_loss:-2.2508,align_loss:0.1342,total_loss:-0.1857
+train_acc:0.7207,valid_acc:0.5780,target_acc:0.4931
+total cost time: 108.0345
+===========epoch 24===========
+class_loss:0.9617,dist_loss:1.2008,exp_loss:-2.2820,align_loss:0.1403,total_loss:0.0208
+train_acc:0.7156,valid_acc:0.5867,target_acc:0.4896
+total cost time: 121.7737
+===========epoch 27===========
+class_loss:0.7720,dist_loss:1.1834,exp_loss:-2.3020,align_loss:0.1300,total_loss:-0.2167
+train_acc:0.7395,valid_acc:0.6156,target_acc:0.4919
+total cost time: 135.8258
+===========epoch 30===========
+class_loss:1.1309,dist_loss:1.1938,exp_loss:-2.2300,align_loss:0.1655,total_loss:0.2601
+train_acc:0.7424,valid_acc:0.6098,target_acc:0.4907
+total cost time: 149.8783
+===========epoch 33===========
+class_loss:0.7846,dist_loss:1.1884,exp_loss:-2.2341,align_loss:0.1425,total_loss:-0.1186
+train_acc:0.7489,valid_acc:0.6532,target_acc:0.5023
+total cost time: 163.5890
+===========epoch 36===========
+class_loss:0.9294,dist_loss:1.1961,exp_loss:-2.2762,align_loss:0.1203,total_loss:-0.0305
+train_acc:0.7634,valid_acc:0.6243,target_acc:0.5127
+total cost time: 177.5927
+===========epoch 39===========
+class_loss:0.7582,dist_loss:1.1851,exp_loss:-2.2570,align_loss:0.1497,total_loss:-0.1640
+train_acc:0.7554,valid_acc:0.6301,target_acc:0.4896
+total cost time: 190.9465
+===========epoch 42===========
+class_loss:0.5573,dist_loss:1.1946,exp_loss:-2.2527,align_loss:0.1634,total_loss:-0.3375
+train_acc:0.7417,valid_acc:0.6098,target_acc:0.4988
+total cost time: 204.6550
+===========epoch 45===========
+class_loss:0.7170,dist_loss:1.1877,exp_loss:-2.2320,align_loss:0.1420,total_loss:-0.1853
+train_acc:0.7554,valid_acc:0.6185,target_acc:0.5139
+total cost time: 218.6388
+===========epoch 48===========
+class_loss:0.9740,dist_loss:1.1909,exp_loss:-2.2526,align_loss:0.1514,total_loss:0.0638
+train_acc:0.7576,valid_acc:0.6387,target_acc:0.5162
+total cost time: 232.8193
+===========epoch 51===========
+class_loss:0.7656,dist_loss:1.2079,exp_loss:-2.2681,align_loss:0.1256,total_loss:-0.1691
+train_acc:0.7417,valid_acc:0.6040,target_acc:0.4653
+total cost time: 246.6732
+===========epoch 54===========
+class_loss:0.8744,dist_loss:1.2065,exp_loss:-2.2376,align_loss:0.1658,total_loss:0.0091
+train_acc:0.7482,valid_acc:0.6127,target_acc:0.5208
+total cost time: 260.3736
+===========epoch 57===========
+class_loss:0.8182,dist_loss:1.2083,exp_loss:-2.3098,align_loss:0.1697,total_loss:-0.1137
+train_acc:0.7410,valid_acc:0.5751,target_acc:0.5069
+total cost time: 274.4285
+===========epoch 60===========
+class_loss:0.7648,dist_loss:1.1629,exp_loss:-2.2245,align_loss:0.1330,total_loss:-0.1637
+train_acc:0.7453,valid_acc:0.6445,target_acc:0.4919
+total cost time: 288.1389
+===========epoch 63===========
+class_loss:0.6911,dist_loss:1.1874,exp_loss:-2.2848,align_loss:0.1400,total_loss:-0.2662
+train_acc:0.7482,valid_acc:0.6012,target_acc:0.4988
+total cost time: 301.1532
+===========epoch 66===========
+class_loss:0.7134,dist_loss:1.1803,exp_loss:-2.2126,align_loss:0.2073,total_loss:-0.1116
+train_acc:0.7627,valid_acc:0.6301,target_acc:0.5012
+total cost time: 315.0247
+===========epoch 69===========
+class_loss:0.6583,dist_loss:1.1889,exp_loss:-2.2445,align_loss:0.1639,total_loss:-0.2334
+train_acc:0.7836,valid_acc:0.6185,target_acc:0.4988
+total cost time: 328.8546
+===========epoch 72===========
+class_loss:0.7647,dist_loss:1.1878,exp_loss:-2.2900,align_loss:0.1688,total_loss:-0.1687
+train_acc:0.7656,valid_acc:0.6069,target_acc:0.5058
+total cost time: 342.4616
+===========epoch 75===========
+class_loss:0.7861,dist_loss:1.1864,exp_loss:-2.2760,align_loss:0.1441,total_loss:-0.1593
+train_acc:0.7301,valid_acc:0.6098,target_acc:0.5023
+total cost time: 356.3710
+===========epoch 78===========
+class_loss:0.5962,dist_loss:1.1977,exp_loss:-2.2643,align_loss:0.1460,total_loss:-0.3244
+train_acc:0.7583,valid_acc:0.5723,target_acc:0.4873
+total cost time: 370.1286
+===========epoch 81===========
+class_loss:0.8229,dist_loss:1.1958,exp_loss:-2.2543,align_loss:0.1257,total_loss:-0.1099
+train_acc:0.7706,valid_acc:0.6272,target_acc:0.5243
+total cost time: 383.3030
+manually descrease lr
+===========epoch 84===========
+class_loss:0.8030,dist_loss:1.1817,exp_loss:-2.2460,align_loss:0.1646,total_loss:-0.0967
+train_acc:0.7742,valid_acc:0.6590,target_acc:0.5046
+total cost time: 397.6084
+===========epoch 87===========
+class_loss:0.6968,dist_loss:1.2124,exp_loss:-2.2796,align_loss:0.1349,total_loss:-0.2354
+train_acc:0.8090,valid_acc:0.6358,target_acc:0.5220
+total cost time: 411.7096
+===========epoch 90===========
+class_loss:0.6062,dist_loss:1.1921,exp_loss:-2.2652,align_loss:0.1944,total_loss:-0.2724
+train_acc:0.8162,valid_acc:0.6561,target_acc:0.5231
+total cost time: 425.7884
+===========epoch 93===========
+class_loss:0.6631,dist_loss:1.1895,exp_loss:-2.2315,align_loss:0.1656,total_loss:-0.2132
+train_acc:0.7988,valid_acc:0.6301,target_acc:0.5058
+total cost time: 440.0324
+===========epoch 96===========
+class_loss:0.6916,dist_loss:1.2080,exp_loss:-2.2639,align_loss:0.1375,total_loss:-0.2268
+train_acc:0.8075,valid_acc:0.6387,target_acc:0.5220
+total cost time: 453.9569
+===========epoch 99===========
+class_loss:0.7098,dist_loss:1.1781,exp_loss:-2.2293,align_loss:0.1708,total_loss:-0.1706
+train_acc:0.8162,valid_acc:0.6474,target_acc:0.5185
+total cost time: 468.0393
+===========epoch 102===========
+class_loss:0.6174,dist_loss:1.1854,exp_loss:-2.2589,align_loss:0.1455,total_loss:-0.3105
+train_acc:0.8111,valid_acc:0.6532,target_acc:0.5093
+total cost time: 481.8508
+===========epoch 105===========
+class_loss:0.7028,dist_loss:1.1860,exp_loss:-2.2846,align_loss:0.1277,total_loss:-0.2681
+train_acc:0.8191,valid_acc:0.6358,target_acc:0.5174
+total cost time: 496.4064
+manually descrease lr
+===========epoch 108===========
+class_loss:0.6007,dist_loss:1.1913,exp_loss:-2.2602,align_loss:0.1632,total_loss:-0.3049
+train_acc:0.8104,valid_acc:0.6301,target_acc:0.5035
+total cost time: 510.4925
+===========epoch 111===========
+class_loss:0.7380,dist_loss:1.1996,exp_loss:-2.2545,align_loss:0.1749,total_loss:-0.1421
+train_acc:0.8148,valid_acc:0.6387,target_acc:0.5150
+total cost time: 524.3026
+===========epoch 114===========
+class_loss:0.5382,dist_loss:1.1850,exp_loss:-2.2528,align_loss:0.1485,total_loss:-0.3811
+train_acc:0.8205,valid_acc:0.6445,target_acc:0.5243
+total cost time: 538.7532
+===========epoch 117===========
+class_loss:0.6540,dist_loss:1.1821,exp_loss:-2.2238,align_loss:0.1467,total_loss:-0.2410
+train_acc:0.8198,valid_acc:0.6387,target_acc:0.5174
+total cost time: 552.2896
+===========epoch 119===========
+class_loss:0.6931,dist_loss:1.1948,exp_loss:-2.2706,align_loss:0.1565,total_loss:-0.2262
+train_acc:0.8184,valid_acc:0.6358,target_acc:0.5185
+total cost time: 563.6862
+valid acc: 0.6590
+DG result: 0.5046
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:VREx
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9']], 'BCICIV-2a-9domain': ['S0', 'S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:3
+
+===========start training===========
+===========epoch 0===========
+loss_loss:1.2088,nll_loss:1.1782,penalty_loss:0.0009
+train_acc:0.5166,valid_acc:0.4191,target_acc:0.4144
+total cost time: 9.1665
+===========epoch 3===========
+loss_loss:0.8862,nll_loss:0.8267,penalty_loss:0.0032
+train_acc:0.6397,valid_acc:0.5434,target_acc:0.4433
+total cost time: 21.3406
+===========epoch 6===========
+loss_loss:0.9116,nll_loss:0.8218,penalty_loss:0.0069
+train_acc:0.7221,valid_acc:0.6185,target_acc:0.4896
+total cost time: 33.5152
+===========epoch 9===========
+loss_loss:0.8646,nll_loss:0.6569,penalty_loss:0.0312
+train_acc:0.7475,valid_acc:0.6329,target_acc:0.5069
+total cost time: 45.5427
+===========epoch 12===========
+loss_loss:0.8863,nll_loss:0.8446,penalty_loss:0.0016
+train_acc:0.7779,valid_acc:0.6821,target_acc:0.5104
+total cost time: 57.7847
+===========epoch 15===========
+loss_loss:0.9412,nll_loss:0.6233,penalty_loss:0.0643
+train_acc:0.7670,valid_acc:0.6214,target_acc:0.4954
+total cost time: 70.5432
+===========epoch 18===========
+loss_loss:0.8219,nll_loss:0.6832,penalty_loss:0.0152
+train_acc:0.8003,valid_acc:0.6821,target_acc:0.4757
+total cost time: 82.7377
+===========epoch 21===========
+loss_loss:0.6608,nll_loss:0.6180,penalty_loss:0.0017
+train_acc:0.8068,valid_acc:0.6590,target_acc:0.4954
+total cost time: 95.6712
+===========epoch 24===========
+loss_loss:0.5886,nll_loss:0.4562,penalty_loss:0.0140
+train_acc:0.8061,valid_acc:0.6618,target_acc:0.4699
+total cost time: 108.9769
+===========epoch 27===========
+loss_loss:0.7023,nll_loss:0.5075,penalty_loss:0.0279
+train_acc:0.8126,valid_acc:0.6561,target_acc:0.5243
+total cost time: 121.7156
+===========epoch 30===========
+loss_loss:0.7756,nll_loss:0.8777,penalty_loss:0.0133
+train_acc:0.7996,valid_acc:0.6734,target_acc:0.4884
+total cost time: 134.2723
+===========epoch 33===========
+loss_loss:0.9988,nll_loss:0.4541,penalty_loss:0.1532
+train_acc:0.8046,valid_acc:0.6734,target_acc:0.4896
+total cost time: 146.9845
+===========epoch 36===========
+loss_loss:0.6877,nll_loss:0.4793,penalty_loss:0.0313
+train_acc:0.8148,valid_acc:0.6734,target_acc:0.4861
+total cost time: 159.6530
+===========epoch 39===========
+loss_loss:0.6121,nll_loss:0.5920,penalty_loss:0.0004
+train_acc:0.8220,valid_acc:0.6792,target_acc:0.5266
+total cost time: 172.7418
+===========epoch 42===========
+loss_loss:0.6266,nll_loss:0.4537,penalty_loss:0.0226
+train_acc:0.7916,valid_acc:0.6387,target_acc:0.5081
+total cost time: 185.2724
+===========epoch 45===========
+loss_loss:0.6805,nll_loss:0.6026,penalty_loss:0.0053
+train_acc:0.8104,valid_acc:0.6329,target_acc:0.4931
+total cost time: 197.4776
+===========epoch 48===========
+loss_loss:0.7568,nll_loss:0.8695,penalty_loss:0.0167
+train_acc:0.8242,valid_acc:0.6705,target_acc:0.5139
+total cost time: 210.4391
+===========epoch 51===========
+loss_loss:0.6512,nll_loss:0.4554,penalty_loss:0.0281
+train_acc:0.7996,valid_acc:0.6618,target_acc:0.5035
+total cost time: 223.4377
+===========epoch 54===========
+loss_loss:0.7428,nll_loss:0.3755,penalty_loss:0.0816
+train_acc:0.8054,valid_acc:0.6618,target_acc:0.5104
+total cost time: 236.6993
+===========epoch 57===========
+loss_loss:0.6246,nll_loss:0.4739,penalty_loss:0.0177
+train_acc:0.8097,valid_acc:0.6561,target_acc:0.5255
+total cost time: 249.7617
+===========epoch 60===========
+loss_loss:0.4680,nll_loss:0.4196,penalty_loss:0.0021
+train_acc:0.8198,valid_acc:0.6301,target_acc:0.4907
+total cost time: 262.6328
+===========epoch 63===========
+loss_loss:0.7005,nll_loss:0.3676,penalty_loss:0.0694
+train_acc:0.8148,valid_acc:0.6821,target_acc:0.5255
+total cost time: 276.2938
+===========epoch 66===========
+loss_loss:0.6056,nll_loss:0.3763,penalty_loss:0.0370
+train_acc:0.8191,valid_acc:0.6503,target_acc:0.5000
+total cost time: 289.4041
+===========epoch 69===========
+loss_loss:0.8443,nll_loss:0.5440,penalty_loss:0.0585
+train_acc:0.7996,valid_acc:0.6416,target_acc:0.5046
+total cost time: 302.1860
+===========epoch 72===========
+loss_loss:0.6269,nll_loss:0.4574,penalty_loss:0.0218
+train_acc:0.8285,valid_acc:0.6561,target_acc:0.4954
+total cost time: 314.9577
+===========epoch 75===========
+loss_loss:0.6686,nll_loss:0.5409,penalty_loss:0.0131
+train_acc:0.8292,valid_acc:0.6561,target_acc:0.5127
+total cost time: 328.1569
+===========epoch 78===========
+loss_loss:0.5806,nll_loss:0.5074,penalty_loss:0.0047
+train_acc:0.8025,valid_acc:0.6561,target_acc:0.4850
+total cost time: 341.2365
+===========epoch 81===========
+loss_loss:0.7687,nll_loss:0.5600,penalty_loss:0.0314
+train_acc:0.8459,valid_acc:0.6503,target_acc:0.4803
+total cost time: 354.0878
+manually descrease lr
+===========epoch 84===========
+loss_loss:0.6815,nll_loss:0.4590,penalty_loss:0.0351
+train_acc:0.8061,valid_acc:0.6301,target_acc:0.4896
+total cost time: 366.9868
+===========epoch 87===========
+loss_loss:0.5262,nll_loss:0.3560,penalty_loss:0.0220
+train_acc:0.8589,valid_acc:0.6618,target_acc:0.5093
+total cost time: 379.8040
+===========epoch 90===========
+loss_loss:0.4216,nll_loss:0.3459,penalty_loss:0.0050
+train_acc:0.8654,valid_acc:0.6705,target_acc:0.5058
+total cost time: 392.8881
+===========epoch 93===========
+loss_loss:0.5652,nll_loss:0.5627,penalty_loss:0.0000
+train_acc:0.8748,valid_acc:0.6763,target_acc:0.5093
+total cost time: 405.6448
+===========epoch 96===========
+loss_loss:0.7309,nll_loss:0.4754,penalty_loss:0.0445
+train_acc:0.8741,valid_acc:0.6676,target_acc:0.5093
+total cost time: 418.5981
+===========epoch 99===========
+loss_loss:0.6139,nll_loss:0.4830,penalty_loss:0.0137
+train_acc:0.8575,valid_acc:0.6792,target_acc:0.5116
+total cost time: 431.3367
+===========epoch 102===========
+loss_loss:0.4609,nll_loss:0.4671,penalty_loss:0.0000
+train_acc:0.8596,valid_acc:0.6474,target_acc:0.5023
+total cost time: 444.3096
+===========epoch 105===========
+loss_loss:0.5289,nll_loss:0.4476,penalty_loss:0.0057
+train_acc:0.8719,valid_acc:0.6618,target_acc:0.5046
+total cost time: 457.1215
+manually descrease lr
+===========epoch 108===========
+loss_loss:0.5538,nll_loss:0.4104,penalty_loss:0.0162
+train_acc:0.8712,valid_acc:0.6503,target_acc:0.5058
+total cost time: 470.0076
+===========epoch 111===========
+loss_loss:0.6137,nll_loss:0.3766,penalty_loss:0.0392
+train_acc:0.8748,valid_acc:0.6618,target_acc:0.5081
+total cost time: 482.9977
+===========epoch 114===========
+loss_loss:0.5281,nll_loss:0.5613,penalty_loss:0.0012
+train_acc:0.8784,valid_acc:0.6647,target_acc:0.5150
+total cost time: 495.8979
+===========epoch 117===========
+loss_loss:0.7235,nll_loss:0.5862,penalty_loss:0.0150
+train_acc:0.8777,valid_acc:0.6821,target_acc:0.5185
+total cost time: 509.0607
+===========epoch 119===========
+loss_loss:0.5641,nll_loss:0.7054,penalty_loss:0.0290
+train_acc:0.8741,valid_acc:0.6618,target_acc:0.5069
+total cost time: 520.1378
+valid acc: 0.6821
+DG result: 0.5104
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:VREx
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[1]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9']], 'BCICIV-2a-9domain': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:3
+
+===========start training===========
+===========epoch 0===========
+loss_loss:1.1662,nll_loss:1.0361,penalty_loss:0.0136
+train_acc:0.5405,valid_acc:0.4740,target_acc:0.3495
+total cost time: 9.4048
+===========epoch 3===========
+loss_loss:0.8260,nll_loss:0.8245,penalty_loss:0.0000
+train_acc:0.6946,valid_acc:0.6098,target_acc:0.4363
+total cost time: 22.0927
+===========epoch 6===========
+loss_loss:0.8431,nll_loss:0.8847,penalty_loss:0.0019
+train_acc:0.7670,valid_acc:0.7168,target_acc:0.4329
+total cost time: 34.6165
+===========epoch 9===========
+loss_loss:0.7552,nll_loss:0.6288,penalty_loss:0.0129
+train_acc:0.7735,valid_acc:0.7110,target_acc:0.4178
+total cost time: 64.0696
+===========epoch 12===========
+loss_loss:0.6745,nll_loss:0.7190,penalty_loss:0.0022
+train_acc:0.8119,valid_acc:0.7139,target_acc:0.4109
+total cost time: 76.6917
+===========epoch 15===========
+loss_loss:0.8583,nll_loss:1.0064,penalty_loss:0.0327
+train_acc:0.8039,valid_acc:0.7283,target_acc:0.4421
+total cost time: 89.3920
+===========epoch 18===========
+loss_loss:0.8083,nll_loss:0.8597,penalty_loss:0.0029
+train_acc:0.8198,valid_acc:0.7168,target_acc:0.4282
+total cost time: 102.0696
+===========epoch 21===========
+loss_loss:0.6581,nll_loss:0.6647,penalty_loss:0.0000
+train_acc:0.8372,valid_acc:0.7312,target_acc:0.4259
+total cost time: 114.5656
+===========epoch 24===========
+loss_loss:0.7388,nll_loss:0.6684,penalty_loss:0.0044
+train_acc:0.8256,valid_acc:0.6965,target_acc:0.4294
+total cost time: 126.9009
+===========epoch 27===========
+loss_loss:0.6389,nll_loss:0.5486,penalty_loss:0.0069
+train_acc:0.8205,valid_acc:0.7457,target_acc:0.4410
+total cost time: 151.6454
+===========epoch 30===========
+loss_loss:0.6976,nll_loss:0.8111,penalty_loss:0.0170
+train_acc:0.8459,valid_acc:0.7312,target_acc:0.4190
+total cost time: 172.2238
+===========epoch 33===========
+loss_loss:0.6261,nll_loss:0.4397,penalty_loss:0.0258
+train_acc:0.8632,valid_acc:0.7312,target_acc:0.4236
+total cost time: 184.5003
+===========epoch 36===========
+loss_loss:0.7052,nll_loss:0.4834,penalty_loss:0.0349
+train_acc:0.8495,valid_acc:0.7486,target_acc:0.4537
+total cost time: 196.9536
+===========epoch 39===========
+loss_loss:0.6513,nll_loss:0.7736,penalty_loss:0.0204
+train_acc:0.8357,valid_acc:0.7110,target_acc:0.4178
+total cost time: 209.5175
+===========epoch 42===========
+loss_loss:0.4959,nll_loss:0.4757,penalty_loss:0.0004
+train_acc:0.8618,valid_acc:0.7225,target_acc:0.4225
+total cost time: 221.9972
+===========epoch 45===========
+loss_loss:0.6495,nll_loss:0.6020,penalty_loss:0.0021
+train_acc:0.8423,valid_acc:0.7428,target_acc:0.4410
+total cost time: 234.5289
+===========epoch 48===========
+loss_loss:0.6521,nll_loss:0.6122,penalty_loss:0.0015
+train_acc:0.7880,valid_acc:0.6532,target_acc:0.4560
+total cost time: 247.5726
+===========epoch 51===========
+loss_loss:0.6361,nll_loss:0.5409,penalty_loss:0.0077
+train_acc:0.8234,valid_acc:0.6908,target_acc:0.4167
+total cost time: 260.7054
+===========epoch 54===========
+loss_loss:0.5210,nll_loss:0.4373,penalty_loss:0.0060
+train_acc:0.8386,valid_acc:0.7110,target_acc:0.4306
+total cost time: 273.0546
+===========epoch 57===========
+loss_loss:0.6329,nll_loss:0.3468,penalty_loss:0.0539
+train_acc:0.8611,valid_acc:0.7254,target_acc:0.4502
+total cost time: 285.4415
+===========epoch 60===========
+loss_loss:0.6724,nll_loss:0.4763,penalty_loss:0.0282
+train_acc:0.8220,valid_acc:0.6965,target_acc:0.4468
+total cost time: 297.9782
+===========epoch 63===========
+loss_loss:0.6018,nll_loss:0.4501,penalty_loss:0.0179
+train_acc:0.8698,valid_acc:0.7399,target_acc:0.4421
+total cost time: 310.5989
+===========epoch 66===========
+loss_loss:0.6104,nll_loss:0.4711,penalty_loss:0.0154
+train_acc:0.8575,valid_acc:0.7110,target_acc:0.4248
+total cost time: 323.4832
+===========epoch 69===========
+loss_loss:0.6144,nll_loss:0.5974,penalty_loss:0.0003
+train_acc:0.8184,valid_acc:0.6618,target_acc:0.4259
+total cost time: 336.1510
+===========epoch 72===========
+loss_loss:0.6777,nll_loss:0.6941,penalty_loss:0.0003
+train_acc:0.8784,valid_acc:0.7428,target_acc:0.4306
+total cost time: 348.8258
+===========epoch 75===========
+loss_loss:0.5019,nll_loss:0.5236,penalty_loss:0.0005
+train_acc:0.8423,valid_acc:0.7197,target_acc:0.4583
+total cost time: 361.3590
+===========epoch 78===========
+loss_loss:0.6440,nll_loss:0.3194,penalty_loss:0.0666
+train_acc:0.8329,valid_acc:0.6763,target_acc:0.4190
+total cost time: 374.0426
+===========epoch 81===========
+loss_loss:0.4184,nll_loss:0.4630,penalty_loss:0.0022
+train_acc:0.8473,valid_acc:0.7110,target_acc:0.4433
+total cost time: 386.7778
+manually descrease lr
+===========epoch 84===========
+loss_loss:0.4548,nll_loss:0.3979,penalty_loss:0.0029
+train_acc:0.8386,valid_acc:0.7197,target_acc:0.4201
+total cost time: 399.3063
+===========epoch 87===========
+loss_loss:0.5470,nll_loss:0.4869,penalty_loss:0.0032
+train_acc:0.8958,valid_acc:0.7688,target_acc:0.4294
+total cost time: 412.3800
+===========epoch 90===========
+loss_loss:0.5315,nll_loss:0.3849,penalty_loss:0.0168
+train_acc:0.9117,valid_acc:0.7572,target_acc:0.4375
+total cost time: 424.7629
+===========epoch 93===========
+loss_loss:0.2439,nll_loss:0.1614,penalty_loss:0.0059
+train_acc:0.9081,valid_acc:0.7659,target_acc:0.4410
+total cost time: 437.1453
+===========epoch 96===========
+loss_loss:0.4542,nll_loss:0.4237,penalty_loss:0.0009
+train_acc:0.9081,valid_acc:0.7775,target_acc:0.4317
+total cost time: 449.4690
+===========epoch 99===========
+loss_loss:0.5233,nll_loss:0.4459,penalty_loss:0.0052
+train_acc:0.9103,valid_acc:0.7746,target_acc:0.4294
+total cost time: 461.7918
+===========epoch 102===========
+loss_loss:0.4463,nll_loss:0.3132,penalty_loss:0.0141
+train_acc:0.9146,valid_acc:0.7630,target_acc:0.4398
+total cost time: 473.8446
+===========epoch 105===========
+loss_loss:0.5562,nll_loss:0.4791,penalty_loss:0.0052
+train_acc:0.9175,valid_acc:0.7746,target_acc:0.4375
+total cost time: 486.4198
+manually descrease lr
+===========epoch 108===========
+loss_loss:0.5035,nll_loss:0.4956,penalty_loss:0.0001
+train_acc:0.9247,valid_acc:0.7688,target_acc:0.4456
+total cost time: 498.3282
+===========epoch 111===========
+loss_loss:0.4996,nll_loss:0.5722,penalty_loss:0.0062
+train_acc:0.9233,valid_acc:0.7775,target_acc:0.4410
+total cost time: 511.2614
+===========epoch 114===========
+loss_loss:0.4834,nll_loss:0.4948,penalty_loss:0.0001
+train_acc:0.9247,valid_acc:0.7861,target_acc:0.4421
+total cost time: 523.4801
+===========epoch 117===========
+loss_loss:0.4659,nll_loss:0.4637,penalty_loss:0.0000
+train_acc:0.9269,valid_acc:0.7861,target_acc:0.4456
+total cost time: 535.9949
+===========epoch 119===========
+loss_loss:0.5694,nll_loss:0.5564,penalty_loss:0.0002
+train_acc:0.9168,valid_acc:0.7717,target_acc:0.4456
+total cost time: 546.8158
+valid acc: 0.7861
+DG result: 0.4421
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:ERM
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[3]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-9domain': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+class_loss:1.2395
+train_acc:0.5277,valid_acc:0.4586,target_acc:0.4853
+total cost time: 13.1936
+===========epoch 3===========
+class_loss:1.0121
+train_acc:0.6257,valid_acc:0.5742,target_acc:0.5513
+total cost time: 30.3800
+===========epoch 6===========
+class_loss:0.8680
+train_acc:0.6971,valid_acc:0.6069,target_acc:0.5903
+total cost time: 47.7738
+===========epoch 9===========
+class_loss:0.7647
+train_acc:0.6662,valid_acc:0.6166,target_acc:0.5853
+total cost time: 65.4379
+===========epoch 12===========
+class_loss:0.9229
+train_acc:0.7212,valid_acc:0.6358,target_acc:0.6134
+total cost time: 82.7496
+===========epoch 15===========
+class_loss:0.7309
+train_acc:0.7405,valid_acc:0.6628,target_acc:0.6308
+total cost time: 99.8033
+===========epoch 18===========
+class_loss:0.8242
+train_acc:0.7366,valid_acc:0.6667,target_acc:0.6296
+total cost time: 117.3181
+===========epoch 21===========
+class_loss:0.7932
+train_acc:0.7434,valid_acc:0.6705,target_acc:0.6296
+total cost time: 135.0071
+===========epoch 24===========
+class_loss:0.8146
+train_acc:0.7463,valid_acc:0.6416,target_acc:0.6211
+total cost time: 152.5920
+===========epoch 27===========
+class_loss:0.7150
+train_acc:0.7559,valid_acc:0.6647,target_acc:0.6393
+total cost time: 170.4069
+===========epoch 30===========
+class_loss:0.7710
+train_acc:0.7627,valid_acc:0.6821,target_acc:0.6458
+total cost time: 188.7363
+===========epoch 33===========
+class_loss:0.8743
+train_acc:0.7337,valid_acc:0.6435,target_acc:0.6103
+total cost time: 208.1042
+===========epoch 36===========
+class_loss:0.8640
+train_acc:0.7593,valid_acc:0.6609,target_acc:0.6404
+total cost time: 226.8284
+===========epoch 39===========
+class_loss:0.7109
+train_acc:0.7752,valid_acc:0.6821,target_acc:0.6524
+total cost time: 247.8560
+===========epoch 42===========
+class_loss:0.9016
+train_acc:0.7588,valid_acc:0.6532,target_acc:0.6262
+total cost time: 265.8782
+===========epoch 45===========
+class_loss:0.8188
+train_acc:0.7631,valid_acc:0.6782,target_acc:0.6343
+total cost time: 283.3713
+===========epoch 48===========
+class_loss:0.5621
+train_acc:0.7694,valid_acc:0.6802,target_acc:0.6427
+total cost time: 301.9591
+===========epoch 51===========
+class_loss:0.7996
+train_acc:0.7767,valid_acc:0.6667,target_acc:0.6489
+total cost time: 319.9764
+===========epoch 54===========
+class_loss:0.6310
+train_acc:0.7916,valid_acc:0.6705,target_acc:0.6601
+total cost time: 338.1609
+===========epoch 57===========
+class_loss:0.7521
+train_acc:0.7791,valid_acc:0.6802,target_acc:0.6470
+total cost time: 356.8860
+===========epoch 60===========
+class_loss:0.7697
+train_acc:0.7955,valid_acc:0.6763,target_acc:0.6501
+total cost time: 374.0940
+===========epoch 63===========
+class_loss:0.6596
+train_acc:0.8032,valid_acc:0.6821,target_acc:0.6555
+total cost time: 394.9440
+===========epoch 66===========
+class_loss:0.6927
+train_acc:0.7670,valid_acc:0.6724,target_acc:0.6416
+total cost time: 428.9804
+===========epoch 69===========
+class_loss:0.6495
+train_acc:0.7935,valid_acc:0.6705,target_acc:0.6427
+total cost time: 467.7158
+===========epoch 72===========
+class_loss:0.6468
+train_acc:0.7877,valid_acc:0.6686,target_acc:0.6566
+total cost time: 489.0239
+===========epoch 75===========
+class_loss:0.6946
+train_acc:0.7617,valid_acc:0.6609,target_acc:0.6308
+total cost time: 506.7678
+===========epoch 78===========
+class_loss:0.7439
+train_acc:0.7752,valid_acc:0.6609,target_acc:0.6123
+total cost time: 524.6460
+===========epoch 81===========
+class_loss:0.8097
+train_acc:0.7955,valid_acc:0.6917,target_acc:0.6501
+total cost time: 542.5234
+manually descrease lr
+===========epoch 84===========
+class_loss:0.7435
+train_acc:0.8090,valid_acc:0.6647,target_acc:0.6609
+total cost time: 560.2691
+===========epoch 87===========
+class_loss:0.8224
+train_acc:0.8181,valid_acc:0.6917,target_acc:0.6678
+total cost time: 578.6564
+===========epoch 90===========
+class_loss:0.6241
+train_acc:0.8220,valid_acc:0.6879,target_acc:0.6771
+total cost time: 596.6953
+===========epoch 93===========
+class_loss:0.6904
+train_acc:0.8056,valid_acc:0.6898,target_acc:0.6593
+total cost time: 614.7495
+===========epoch 96===========
+class_loss:0.7329
+train_acc:0.8210,valid_acc:0.6994,target_acc:0.6698
+total cost time: 632.2820
+===========epoch 99===========
+class_loss:0.6268
+train_acc:0.8259,valid_acc:0.6879,target_acc:0.6667
+total cost time: 650.2887
+===========epoch 102===========
+class_loss:0.6283
+train_acc:0.8196,valid_acc:0.6975,target_acc:0.6721
+total cost time: 668.3000
+===========epoch 105===========
+class_loss:0.6198
+train_acc:0.8177,valid_acc:0.6956,target_acc:0.6671
+total cost time: 686.3020
+manually descrease lr
+===========epoch 108===========
+class_loss:0.4876
+train_acc:0.8191,valid_acc:0.6898,target_acc:0.6686
+total cost time: 704.2877
+===========epoch 111===========
+class_loss:0.5981
+train_acc:0.8244,valid_acc:0.6956,target_acc:0.6794
+total cost time: 722.0173
+===========epoch 114===========
+class_loss:0.8312
+train_acc:0.8312,valid_acc:0.6917,target_acc:0.6767
+total cost time: 739.6689
+===========epoch 117===========
+class_loss:0.7320
+train_acc:0.8254,valid_acc:0.6917,target_acc:0.6728
+total cost time: 757.4804
+===========epoch 119===========
+class_loss:0.7197
+train_acc:0.8321,valid_acc:0.6956,target_acc:0.6771
+total cost time: 773.6475
+valid acc: 0.6994
+DG result: 0.6698
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:ERM
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:0
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:200
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[3]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-9domain': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+class_loss:1.2395
+train_acc:0.5277,valid_acc:0.4586,target_acc:0.4853
+total cost time: 13.1329
+===========epoch 3===========
+class_loss:1.0121
+train_acc:0.6257,valid_acc:0.5742,target_acc:0.5513
+total cost time: 30.6434
+===========epoch 6===========
+class_loss:0.8680
+train_acc:0.6971,valid_acc:0.6069,target_acc:0.5903
+total cost time: 48.0077
+===========epoch 9===========
+class_loss:0.7647
+train_acc:0.6662,valid_acc:0.6166,target_acc:0.5853
+total cost time: 65.1909
+===========epoch 12===========
+class_loss:0.9229
+train_acc:0.7212,valid_acc:0.6358,target_acc:0.6134
+total cost time: 82.2610
+===========epoch 15===========
+class_loss:0.7309
+train_acc:0.7405,valid_acc:0.6628,target_acc:0.6308
+total cost time: 99.8378
+===========epoch 18===========
+class_loss:0.8242
+train_acc:0.7366,valid_acc:0.6667,target_acc:0.6296
+total cost time: 118.0094
+===========epoch 21===========
+class_loss:0.7932
+train_acc:0.7434,valid_acc:0.6705,target_acc:0.6296
+total cost time: 135.2807
+===========epoch 24===========
+class_loss:0.8146
+train_acc:0.7463,valid_acc:0.6416,target_acc:0.6211
+total cost time: 152.5320
+===========epoch 27===========
+class_loss:0.7150
+train_acc:0.7559,valid_acc:0.6647,target_acc:0.6393
+total cost time: 169.9282
+===========epoch 30===========
+class_loss:0.7710
+train_acc:0.7627,valid_acc:0.6821,target_acc:0.6458
+total cost time: 187.6086
+===========epoch 33===========
+class_loss:0.8743
+train_acc:0.7337,valid_acc:0.6435,target_acc:0.6103
+total cost time: 205.3896
+===========epoch 36===========
+class_loss:0.8640
+train_acc:0.7593,valid_acc:0.6609,target_acc:0.6404
+total cost time: 223.0172
+===========epoch 39===========
+class_loss:0.7109
+train_acc:0.7752,valid_acc:0.6821,target_acc:0.6524
+total cost time: 241.0920
+===========epoch 42===========
+class_loss:0.9016
+train_acc:0.7588,valid_acc:0.6532,target_acc:0.6262
+total cost time: 258.7803
+===========epoch 45===========
+class_loss:0.8188
+train_acc:0.7631,valid_acc:0.6782,target_acc:0.6343
+total cost time: 276.4320
+===========epoch 48===========
+class_loss:0.5621
+train_acc:0.7694,valid_acc:0.6802,target_acc:0.6427
+total cost time: 294.1192
+===========epoch 51===========
+class_loss:0.7996
+train_acc:0.7767,valid_acc:0.6667,target_acc:0.6489
+total cost time: 311.9575
+===========epoch 54===========
+class_loss:0.6310
+train_acc:0.7916,valid_acc:0.6705,target_acc:0.6601
+total cost time: 329.1450
+===========epoch 57===========
+class_loss:0.7521
+train_acc:0.7791,valid_acc:0.6802,target_acc:0.6470
+total cost time: 346.7385
+===========epoch 60===========
+class_loss:0.7697
+train_acc:0.7955,valid_acc:0.6763,target_acc:0.6501
+total cost time: 364.7008
+===========epoch 63===========
+class_loss:0.6596
+train_acc:0.8032,valid_acc:0.6821,target_acc:0.6555
+total cost time: 382.0895
+===========epoch 66===========
+class_loss:0.6927
+train_acc:0.7670,valid_acc:0.6724,target_acc:0.6416
+total cost time: 399.7244
+===========epoch 69===========
+class_loss:0.6495
+train_acc:0.7935,valid_acc:0.6705,target_acc:0.6427
+total cost time: 417.7811
+===========epoch 72===========
+class_loss:0.6468
+train_acc:0.7877,valid_acc:0.6686,target_acc:0.6566
+total cost time: 437.5209
+===========epoch 75===========
+class_loss:0.6946
+train_acc:0.7617,valid_acc:0.6609,target_acc:0.6308
+total cost time: 455.1538
+===========epoch 78===========
+class_loss:0.7439
+train_acc:0.7752,valid_acc:0.6609,target_acc:0.6123
+total cost time: 472.9777
+===========epoch 81===========
+class_loss:0.8097
+train_acc:0.7955,valid_acc:0.6917,target_acc:0.6501
+total cost time: 490.6937
+===========epoch 84===========
+class_loss:0.7435
+train_acc:0.8090,valid_acc:0.6647,target_acc:0.6609
+total cost time: 507.9728
+===========epoch 87===========
+class_loss:0.7905
+train_acc:0.8017,valid_acc:0.6802,target_acc:0.6593
+total cost time: 525.6025
+===========epoch 90===========
+class_loss:0.6314
+train_acc:0.7988,valid_acc:0.6667,target_acc:0.6624
+total cost time: 543.2081
+===========epoch 93===========
+class_loss:0.7074
+train_acc:0.8119,valid_acc:0.6667,target_acc:0.6543
+total cost time: 560.7443
+===========epoch 96===========
+class_loss:0.7425
+train_acc:0.7834,valid_acc:0.6879,target_acc:0.6478
+total cost time: 578.3059
+===========epoch 99===========
+class_loss:0.6184
+train_acc:0.8095,valid_acc:0.6705,target_acc:0.6559
+total cost time: 595.7374
+===========epoch 102===========
+class_loss:0.7149
+train_acc:0.7998,valid_acc:0.6802,target_acc:0.6605
+total cost time: 645.9334
+===========epoch 105===========
+class_loss:0.6354
+train_acc:0.8095,valid_acc:0.6724,target_acc:0.6547
+total cost time: 674.4095
+===========epoch 108===========
+class_loss:0.5419
+train_acc:0.8066,valid_acc:0.6898,target_acc:0.6539
+total cost time: 692.2606
+===========epoch 111===========
+class_loss:0.6185
+train_acc:0.8032,valid_acc:0.6590,target_acc:0.6574
+total cost time: 710.3689
+===========epoch 114===========
+class_loss:0.8613
+train_acc:0.7853,valid_acc:0.6782,target_acc:0.6431
+total cost time: 727.9274
+===========epoch 117===========
+class_loss:0.7893
+train_acc:0.8066,valid_acc:0.6802,target_acc:0.6559
+total cost time: 746.1420
+===========epoch 120===========
+class_loss:0.8074
+train_acc:0.8119,valid_acc:0.6744,target_acc:0.6543
+total cost time: 763.7496
+===========epoch 123===========
+class_loss:0.6430
+train_acc:0.7549,valid_acc:0.6339,target_acc:0.6096
+total cost time: 781.7796
+===========epoch 126===========
+class_loss:0.6257
+train_acc:0.8070,valid_acc:0.6686,target_acc:0.6528
+total cost time: 799.9096
+===========epoch 129===========
+class_loss:0.8017
+train_acc:0.7877,valid_acc:0.6570,target_acc:0.6462
+total cost time: 817.6105
+===========epoch 132===========
+class_loss:0.7389
+train_acc:0.8075,valid_acc:0.6744,target_acc:0.6516
+total cost time: 835.3641
+===========epoch 135===========
+class_loss:0.6583
+train_acc:0.7988,valid_acc:0.6917,target_acc:0.6424
+total cost time: 852.9712
+===========epoch 138===========
+class_loss:0.5801
+train_acc:0.8085,valid_acc:0.6705,target_acc:0.6674
+total cost time: 870.7887
+manually descrease lr
+===========epoch 141===========
+class_loss:0.7231
+train_acc:0.8312,valid_acc:0.6879,target_acc:0.6632
+total cost time: 888.4574
+===========epoch 144===========
+class_loss:0.7248
+train_acc:0.8341,valid_acc:0.6821,target_acc:0.6566
+total cost time: 906.9246
+===========epoch 147===========
+class_loss:0.6160
+train_acc:0.8326,valid_acc:0.6879,target_acc:0.6655
+total cost time: 938.5635
+===========epoch 150===========
+class_loss:0.5577
+train_acc:0.8331,valid_acc:0.6879,target_acc:0.6667
+total cost time: 955.5536
+===========epoch 153===========
+class_loss:0.5866
+train_acc:0.8336,valid_acc:0.6821,target_acc:0.6597
+total cost time: 973.3055
+===========epoch 156===========
+class_loss:0.5471
+train_acc:0.8123,valid_acc:0.6705,target_acc:0.6420
+total cost time: 990.6588
+===========epoch 159===========
+class_loss:0.6521
+train_acc:0.8374,valid_acc:0.6840,target_acc:0.6601
+total cost time: 1008.5407
+===========epoch 162===========
+class_loss:0.6094
+train_acc:0.8312,valid_acc:0.6879,target_acc:0.6582
+total cost time: 1026.5244
+===========epoch 165===========
+class_loss:0.6600
+train_acc:0.8278,valid_acc:0.6744,target_acc:0.6605
+total cost time: 1044.4965
+===========epoch 168===========
+class_loss:0.6610
+train_acc:0.8413,valid_acc:0.6782,target_acc:0.6647
+total cost time: 1061.9923
+===========epoch 171===========
+class_loss:0.7187
+train_acc:0.8418,valid_acc:0.6898,target_acc:0.6671
+total cost time: 1079.5779
+===========epoch 174===========
+class_loss:0.5876
+train_acc:0.8331,valid_acc:0.6821,target_acc:0.6578
+total cost time: 1097.7628
+===========epoch 177===========
+class_loss:0.5616
+train_acc:0.8374,valid_acc:0.6744,target_acc:0.6582
+total cost time: 1115.5167
+manually descrease lr
+===========epoch 180===========
+class_loss:0.5278
+train_acc:0.8442,valid_acc:0.6936,target_acc:0.6609
+total cost time: 1133.5867
+===========epoch 183===========
+class_loss:0.5763
+train_acc:0.8466,valid_acc:0.6840,target_acc:0.6636
+total cost time: 1151.2434
+===========epoch 186===========
+class_loss:0.5458
+train_acc:0.8447,valid_acc:0.6802,target_acc:0.6617
+total cost time: 1169.2385
+===========epoch 189===========
+class_loss:0.5870
+train_acc:0.8389,valid_acc:0.6859,target_acc:0.6690
+total cost time: 1187.1086
+===========epoch 192===========
+class_loss:0.4723
+train_acc:0.8480,valid_acc:0.6879,target_acc:0.6667
+total cost time: 1205.1531
+===========epoch 195===========
+class_loss:0.5084
+train_acc:0.8423,valid_acc:0.6802,target_acc:0.6644
+total cost time: 1222.9386
+===========epoch 198===========
+class_loss:0.5602
+train_acc:0.8495,valid_acc:0.6879,target_acc:0.6667
+total cost time: 1240.2024
+===========epoch 199===========
+class_loss:0.5873
+train_acc:0.8374,valid_acc:0.6821,target_acc:0.6636
+total cost time: 1253.3950
+valid acc: 0.6936
+DG result: 0.6609
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:ERM
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:3
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.001
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:200
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[3]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-9domain': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+class_loss:1.3846
+train_acc:0.3136,valid_acc:0.3218,target_acc:0.3164
+total cost time: 14.5068
+===========epoch 3===========
+class_loss:1.2614
+train_acc:0.4607,valid_acc:0.4297,target_acc:0.4479
+total cost time: 33.1830
+===========epoch 6===========
+class_loss:1.1487
+train_acc:0.5417,valid_acc:0.4624,target_acc:0.5046
+total cost time: 51.9033
+===========epoch 9===========
+class_loss:1.0318
+train_acc:0.5707,valid_acc:0.4913,target_acc:0.5120
+total cost time: 70.8090
+===========epoch 12===========
+class_loss:1.1462
+train_acc:0.5837,valid_acc:0.4971,target_acc:0.5208
+total cost time: 89.6144
+===========epoch 15===========
+class_loss:0.9402
+train_acc:0.6228,valid_acc:0.5125,target_acc:0.5463
+total cost time: 108.0229
+===========epoch 18===========
+class_loss:1.0970
+train_acc:0.6324,valid_acc:0.5434,target_acc:0.5517
+total cost time: 126.2580
+===========epoch 21===========
+class_loss:1.0300
+train_acc:0.6368,valid_acc:0.5453,target_acc:0.5548
+total cost time: 144.7572
+===========epoch 24===========
+class_loss:1.0817
+train_acc:0.6512,valid_acc:0.5761,target_acc:0.5617
+total cost time: 163.2698
+===========epoch 27===========
+class_loss:0.8902
+train_acc:0.6643,valid_acc:0.5877,target_acc:0.5729
+total cost time: 181.7538
+===========epoch 30===========
+class_loss:0.8650
+train_acc:0.6720,valid_acc:0.6012,target_acc:0.5810
+total cost time: 199.8100
+===========epoch 33===========
+class_loss:1.0700
+train_acc:0.6763,valid_acc:0.6224,target_acc:0.5876
+total cost time: 218.0627
+===========epoch 36===========
+class_loss:0.9714
+train_acc:0.6782,valid_acc:0.6281,target_acc:0.5887
+total cost time: 236.2229
+===========epoch 39===========
+class_loss:0.9805
+train_acc:0.6903,valid_acc:0.6127,target_acc:0.5945
+total cost time: 254.5595
+===========epoch 42===========
+class_loss:0.9338
+train_acc:0.6961,valid_acc:0.6301,target_acc:0.6034
+total cost time: 272.9923
+===========epoch 45===========
+class_loss:0.8952
+train_acc:0.6995,valid_acc:0.6243,target_acc:0.6042
+total cost time: 291.4846
+===========epoch 48===========
+class_loss:0.7199
+train_acc:0.7072,valid_acc:0.6455,target_acc:0.6003
+total cost time: 309.6623
+===========epoch 51===========
+class_loss:0.8727
+train_acc:0.7115,valid_acc:0.6358,target_acc:0.6130
+total cost time: 327.9067
+===========epoch 54===========
+class_loss:0.7676
+train_acc:0.7028,valid_acc:0.6416,target_acc:0.6080
+total cost time: 346.4269
+===========epoch 57===========
+class_loss:0.7588
+train_acc:0.6990,valid_acc:0.6185,target_acc:0.6088
+total cost time: 364.8888
+===========epoch 60===========
+class_loss:0.8050
+train_acc:0.7130,valid_acc:0.6416,target_acc:0.6103
+total cost time: 383.6579
+===========epoch 63===========
+class_loss:0.7809
+train_acc:0.7221,valid_acc:0.6551,target_acc:0.6161
+total cost time: 401.9345
+===========epoch 66===========
+class_loss:0.7223
+train_acc:0.7323,valid_acc:0.6532,target_acc:0.6157
+total cost time: 420.7142
+===========epoch 69===========
+class_loss:0.8128
+train_acc:0.7284,valid_acc:0.6513,target_acc:0.6127
+total cost time: 440.0905
+===========epoch 72===========
+class_loss:0.8861
+train_acc:0.7260,valid_acc:0.6493,target_acc:0.6184
+total cost time: 458.9135
+===========epoch 75===========
+class_loss:0.7386
+train_acc:0.7265,valid_acc:0.6455,target_acc:0.6196
+total cost time: 478.0091
+===========epoch 78===========
+class_loss:0.8463
+train_acc:0.7318,valid_acc:0.6474,target_acc:0.6146
+total cost time: 496.4693
+===========epoch 81===========
+class_loss:0.7440
+train_acc:0.7120,valid_acc:0.6378,target_acc:0.6107
+total cost time: 514.4232
+===========epoch 84===========
+class_loss:0.8438
+train_acc:0.7361,valid_acc:0.6513,target_acc:0.6130
+total cost time: 533.5973
+===========epoch 87===========
+class_loss:0.8421
+train_acc:0.7429,valid_acc:0.6455,target_acc:0.6173
+total cost time: 556.3688
+===========epoch 90===========
+class_loss:0.7184
+train_acc:0.7472,valid_acc:0.6493,target_acc:0.6235
+total cost time: 575.5769
+===========epoch 93===========
+class_loss:0.8211
+train_acc:0.7400,valid_acc:0.6532,target_acc:0.6196
+total cost time: 594.0977
+===========epoch 96===========
+class_loss:0.8886
+train_acc:0.7410,valid_acc:0.6474,target_acc:0.6177
+total cost time: 612.4639
+===========epoch 99===========
+class_loss:0.7612
+train_acc:0.7521,valid_acc:0.6474,target_acc:0.6177
+total cost time: 630.8806
+===========epoch 102===========
+class_loss:0.9201
+train_acc:0.7521,valid_acc:0.6435,target_acc:0.6262
+total cost time: 648.7456
+===========epoch 105===========
+class_loss:0.7454
+train_acc:0.7631,valid_acc:0.6590,target_acc:0.6227
+total cost time: 667.2684
+===========epoch 108===========
+class_loss:0.6508
+train_acc:0.7525,valid_acc:0.6628,target_acc:0.6169
+total cost time: 685.8093
+===========epoch 111===========
+class_loss:0.7913
+train_acc:0.7477,valid_acc:0.6532,target_acc:0.6161
+total cost time: 704.2626
+===========epoch 114===========
+class_loss:0.8796
+train_acc:0.7631,valid_acc:0.6532,target_acc:0.6200
+total cost time: 722.7210
+===========epoch 117===========
+class_loss:0.7965
+train_acc:0.7607,valid_acc:0.6590,target_acc:0.6258
+total cost time: 741.6563
+===========epoch 120===========
+class_loss:0.8050
+train_acc:0.7516,valid_acc:0.6378,target_acc:0.6273
+total cost time: 759.8970
+===========epoch 123===========
+class_loss:0.6955
+train_acc:0.7631,valid_acc:0.6590,target_acc:0.6265
+total cost time: 778.3260
+===========epoch 126===========
+class_loss:0.7314
+train_acc:0.7506,valid_acc:0.6647,target_acc:0.6161
+total cost time: 796.6824
+===========epoch 129===========
+class_loss:0.9117
+train_acc:0.7424,valid_acc:0.6532,target_acc:0.6076
+total cost time: 814.9630
+===========epoch 132===========
+class_loss:0.7587
+train_acc:0.7588,valid_acc:0.6513,target_acc:0.6258
+total cost time: 833.4926
+===========epoch 135===========
+class_loss:0.7770
+train_acc:0.7704,valid_acc:0.6474,target_acc:0.6277
+total cost time: 851.9370
+===========epoch 138===========
+class_loss:0.7230
+train_acc:0.7742,valid_acc:0.6493,target_acc:0.6331
+total cost time: 870.3642
+manually descrease lr
+===========epoch 141===========
+class_loss:0.7992
+train_acc:0.7767,valid_acc:0.6493,target_acc:0.6246
+total cost time: 889.0046
+===========epoch 144===========
+class_loss:0.8688
+train_acc:0.7718,valid_acc:0.6455,target_acc:0.6262
+total cost time: 907.2592
+===========epoch 147===========
+class_loss:0.7308
+train_acc:0.7742,valid_acc:0.6493,target_acc:0.6300
+total cost time: 925.4622
+===========epoch 150===========
+class_loss:0.7397
+train_acc:0.7791,valid_acc:0.6455,target_acc:0.6308
+total cost time: 943.6505
+===========epoch 153===========
+class_loss:0.8359
+train_acc:0.7767,valid_acc:0.6474,target_acc:0.6312
+total cost time: 962.8476
+===========epoch 156===========
+class_loss:0.6701
+train_acc:0.7786,valid_acc:0.6493,target_acc:0.6281
+total cost time: 981.3728
+===========epoch 159===========
+class_loss:0.7825
+train_acc:0.7815,valid_acc:0.6493,target_acc:0.6269
+total cost time: 999.7600
+===========epoch 162===========
+class_loss:0.8054
+train_acc:0.7757,valid_acc:0.6416,target_acc:0.6323
+total cost time: 1018.4810
+===========epoch 165===========
+class_loss:0.7514
+train_acc:0.7771,valid_acc:0.6435,target_acc:0.6281
+total cost time: 1038.1597
+===========epoch 168===========
+class_loss:0.9207
+train_acc:0.7791,valid_acc:0.6474,target_acc:0.6331
+total cost time: 1056.9186
+===========epoch 171===========
+class_loss:0.7992
+train_acc:0.7786,valid_acc:0.6474,target_acc:0.6350
+total cost time: 1076.3462
+===========epoch 174===========
+class_loss:0.7949
+train_acc:0.7781,valid_acc:0.6455,target_acc:0.6296
+total cost time: 1104.9299
+===========epoch 177===========
+class_loss:0.6652
+train_acc:0.7786,valid_acc:0.6493,target_acc:0.6281
+total cost time: 1123.1036
+manually descrease lr
+===========epoch 180===========
+class_loss:0.7144
+train_acc:0.7767,valid_acc:0.6474,target_acc:0.6281
+total cost time: 1141.4940
+===========epoch 183===========
+class_loss:0.6627
+train_acc:0.7791,valid_acc:0.6455,target_acc:0.6316
+total cost time: 1159.8682
+===========epoch 186===========
+class_loss:0.6750
+train_acc:0.7786,valid_acc:0.6455,target_acc:0.6339
+total cost time: 1178.3246
+===========epoch 189===========
+class_loss:0.7765
+train_acc:0.7781,valid_acc:0.6455,target_acc:0.6350
+total cost time: 1196.9063
+===========epoch 192===========
+class_loss:0.6999
+train_acc:0.7810,valid_acc:0.6474,target_acc:0.6331
+total cost time: 1215.6983
+===========epoch 195===========
+class_loss:0.6166
+train_acc:0.7810,valid_acc:0.6493,target_acc:0.6335
+total cost time: 1234.4935
+===========epoch 198===========
+class_loss:0.7129
+train_acc:0.7810,valid_acc:0.6513,target_acc:0.6319
+total cost time: 1253.1923
+===========epoch 199===========
+class_loss:0.7531
+train_acc:0.7786,valid_acc:0.6416,target_acc:0.6308
+total cost time: 1267.1463
+valid acc: 0.6647
+DG result: 0.6161
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:ERM
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:3
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.005
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:200
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[3]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-9domain': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+class_loss:1.2701
+train_acc:0.4699,valid_acc:0.4123,target_acc:0.4479
+total cost time: 14.1416
+===========epoch 3===========
+class_loss:1.0681
+train_acc:0.6054,valid_acc:0.5491,target_acc:0.5421
+total cost time: 33.0240
+===========epoch 6===========
+class_loss:0.8937
+train_acc:0.6628,valid_acc:0.6069,target_acc:0.5748
+total cost time: 52.4666
+===========epoch 9===========
+class_loss:0.7717
+train_acc:0.6638,valid_acc:0.6050,target_acc:0.5633
+total cost time: 71.4792
+===========epoch 12===========
+class_loss:0.9242
+train_acc:0.6990,valid_acc:0.6339,target_acc:0.5972
+total cost time: 89.4812
+===========epoch 15===========
+class_loss:0.7817
+train_acc:0.7086,valid_acc:0.6320,target_acc:0.6096
+total cost time: 106.9720
+===========epoch 18===========
+class_loss:0.8915
+train_acc:0.7101,valid_acc:0.6320,target_acc:0.6211
+total cost time: 126.5757
+===========epoch 21===========
+class_loss:0.8898
+train_acc:0.7299,valid_acc:0.6358,target_acc:0.6304
+total cost time: 148.6001
+===========epoch 24===========
+class_loss:0.9294
+train_acc:0.7299,valid_acc:0.6320,target_acc:0.6254
+total cost time: 167.9924
+===========epoch 27===========
+class_loss:0.7293
+train_acc:0.7414,valid_acc:0.6590,target_acc:0.6327
+total cost time: 186.5964
+===========epoch 30===========
+class_loss:0.8521
+train_acc:0.7516,valid_acc:0.6705,target_acc:0.6435
+total cost time: 206.0867
+===========epoch 33===========
+class_loss:0.8472
+train_acc:0.7501,valid_acc:0.6802,target_acc:0.6478
+total cost time: 224.9495
+===========epoch 36===========
+class_loss:0.8360
+train_acc:0.7588,valid_acc:0.6763,target_acc:0.6427
+total cost time: 243.8023
+===========epoch 39===========
+class_loss:0.7430
+train_acc:0.7723,valid_acc:0.6802,target_acc:0.6505
+total cost time: 262.5251
+===========epoch 42===========
+class_loss:0.8771
+train_acc:0.7593,valid_acc:0.6570,target_acc:0.6420
+total cost time: 281.1355
+===========epoch 45===========
+class_loss:0.7698
+train_acc:0.7680,valid_acc:0.6551,target_acc:0.6420
+total cost time: 299.3308
+===========epoch 48===========
+class_loss:0.5363
+train_acc:0.7607,valid_acc:0.6821,target_acc:0.6427
+total cost time: 318.0076
+===========epoch 51===========
+class_loss:0.7878
+train_acc:0.7858,valid_acc:0.6936,target_acc:0.6590
+total cost time: 336.7090
+===========epoch 54===========
+class_loss:0.5849
+train_acc:0.7897,valid_acc:0.6821,target_acc:0.6620
+total cost time: 354.6758
+===========epoch 57===========
+class_loss:0.7235
+train_acc:0.7535,valid_acc:0.6647,target_acc:0.6304
+total cost time: 372.6399
+===========epoch 60===========
+class_loss:0.7956
+train_acc:0.7795,valid_acc:0.6744,target_acc:0.6354
+total cost time: 391.5042
+===========epoch 63===========
+class_loss:0.6802
+train_acc:0.8041,valid_acc:0.6879,target_acc:0.6647
+total cost time: 411.0812
+===========epoch 66===========
+class_loss:0.7061
+train_acc:0.7897,valid_acc:0.6724,target_acc:0.6570
+total cost time: 430.0334
+===========epoch 69===========
+class_loss:0.6777
+train_acc:0.7839,valid_acc:0.6570,target_acc:0.6269
+total cost time: 449.3231
+===========epoch 72===========
+class_loss:0.6175
+train_acc:0.7911,valid_acc:0.6628,target_acc:0.6570
+total cost time: 467.6640
+===========epoch 75===========
+class_loss:0.6222
+train_acc:0.7921,valid_acc:0.6821,target_acc:0.6593
+total cost time: 487.7612
+===========epoch 78===========
+class_loss:0.6954
+train_acc:0.7892,valid_acc:0.6647,target_acc:0.6373
+total cost time: 506.5365
+===========epoch 81===========
+class_loss:0.8146
+train_acc:0.7849,valid_acc:0.6570,target_acc:0.6370
+total cost time: 524.8480
+===========epoch 84===========
+class_loss:0.7231
+train_acc:0.8022,valid_acc:0.6782,target_acc:0.6620
+total cost time: 544.0390
+===========epoch 87===========
+class_loss:0.8038
+train_acc:0.8046,valid_acc:0.6782,target_acc:0.6698
+total cost time: 562.9757
+===========epoch 90===========
+class_loss:0.6307
+train_acc:0.7940,valid_acc:0.6647,target_acc:0.6609
+total cost time: 581.2121
+===========epoch 93===========
+class_loss:0.6865
+train_acc:0.8085,valid_acc:0.6782,target_acc:0.6520
+total cost time: 599.7917
+===========epoch 96===========
+class_loss:0.7950
+train_acc:0.7713,valid_acc:0.6609,target_acc:0.6435
+total cost time: 618.8914
+===========epoch 99===========
+class_loss:0.6605
+train_acc:0.8085,valid_acc:0.6667,target_acc:0.6516
+total cost time: 638.4063
+===========epoch 102===========
+class_loss:0.7246
+train_acc:0.7993,valid_acc:0.6821,target_acc:0.6609
+total cost time: 657.5361
+===========epoch 105===========
+class_loss:0.6325
+train_acc:0.8104,valid_acc:0.6705,target_acc:0.6566
+total cost time: 676.9232
+===========epoch 108===========
+class_loss:0.5471
+train_acc:0.8051,valid_acc:0.6705,target_acc:0.6551
+total cost time: 695.2317
+===========epoch 111===========
+class_loss:0.6918
+train_acc:0.7984,valid_acc:0.6821,target_acc:0.6617
+total cost time: 714.3804
+===========epoch 114===========
+class_loss:0.8060
+train_acc:0.8066,valid_acc:0.6859,target_acc:0.6624
+total cost time: 733.5653
+===========epoch 117===========
+class_loss:0.7234
+train_acc:0.8080,valid_acc:0.6879,target_acc:0.6590
+total cost time: 753.0360
+===========epoch 120===========
+class_loss:0.6081
+train_acc:0.8278,valid_acc:0.6840,target_acc:0.6694
+total cost time: 772.5886
+===========epoch 123===========
+class_loss:0.6302
+train_acc:0.8008,valid_acc:0.6782,target_acc:0.6397
+total cost time: 791.2862
+===========epoch 126===========
+class_loss:0.5777
+train_acc:0.8095,valid_acc:0.6744,target_acc:0.6620
+total cost time: 810.6318
+===========epoch 129===========
+class_loss:0.8550
+train_acc:0.8186,valid_acc:0.6724,target_acc:0.6694
+total cost time: 830.1974
+===========epoch 132===========
+class_loss:0.7622
+train_acc:0.7950,valid_acc:0.6724,target_acc:0.6354
+total cost time: 849.9110
+===========epoch 135===========
+class_loss:0.6064
+train_acc:0.8070,valid_acc:0.6744,target_acc:0.6478
+total cost time: 868.4826
+===========epoch 138===========
+class_loss:0.5684
+train_acc:0.8046,valid_acc:0.6744,target_acc:0.6566
+total cost time: 887.5768
+manually descrease lr
+===========epoch 141===========
+class_loss:0.7636
+train_acc:0.8268,valid_acc:0.6879,target_acc:0.6647
+total cost time: 906.9205
+===========epoch 144===========
+class_loss:0.7214
+train_acc:0.8365,valid_acc:0.6859,target_acc:0.6701
+total cost time: 927.4726
+===========epoch 147===========
+class_loss:0.5833
+train_acc:0.8273,valid_acc:0.6744,target_acc:0.6717
+total cost time: 946.4182
+===========epoch 150===========
+class_loss:0.5667
+train_acc:0.8427,valid_acc:0.6917,target_acc:0.6813
+total cost time: 965.3735
+===========epoch 153===========
+class_loss:0.6235
+train_acc:0.8365,valid_acc:0.6821,target_acc:0.6701
+total cost time: 984.7814
+===========epoch 156===========
+class_loss:0.5153
+train_acc:0.8230,valid_acc:0.6763,target_acc:0.6632
+total cost time: 1003.8746
+===========epoch 159===========
+class_loss:0.7199
+train_acc:0.8370,valid_acc:0.6879,target_acc:0.6678
+total cost time: 1027.7958
+===========epoch 162===========
+class_loss:0.6199
+train_acc:0.8312,valid_acc:0.6859,target_acc:0.6690
+total cost time: 1047.2738
+===========epoch 165===========
+class_loss:0.6122
+train_acc:0.8360,valid_acc:0.6859,target_acc:0.6632
+total cost time: 1065.9209
+===========epoch 168===========
+class_loss:0.6423
+train_acc:0.8413,valid_acc:0.6956,target_acc:0.6694
+total cost time: 1084.4966
+===========epoch 171===========
+class_loss:0.7896
+train_acc:0.8384,valid_acc:0.7071,target_acc:0.6698
+total cost time: 1103.5623
+===========epoch 174===========
+class_loss:0.6338
+train_acc:0.8302,valid_acc:0.6840,target_acc:0.6605
+total cost time: 1121.6517
+===========epoch 177===========
+class_loss:0.5450
+train_acc:0.8350,valid_acc:0.6936,target_acc:0.6682
+total cost time: 1140.0786
+manually descrease lr
+===========epoch 180===========
+class_loss:0.5933
+train_acc:0.8370,valid_acc:0.6840,target_acc:0.6674
+total cost time: 1159.8043
+===========epoch 183===========
+class_loss:0.6437
+train_acc:0.8403,valid_acc:0.6879,target_acc:0.6721
+total cost time: 1182.2560
+===========epoch 186===========
+class_loss:0.6157
+train_acc:0.8408,valid_acc:0.6898,target_acc:0.6682
+total cost time: 1201.9205
+===========epoch 189===========
+class_loss:0.5992
+train_acc:0.8447,valid_acc:0.6994,target_acc:0.6721
+total cost time: 1221.5186
+===========epoch 192===========
+class_loss:0.4893
+train_acc:0.8423,valid_acc:0.6956,target_acc:0.6725
+total cost time: 1240.3173
+===========epoch 195===========
+class_loss:0.4970
+train_acc:0.8418,valid_acc:0.6936,target_acc:0.6721
+total cost time: 1259.1299
+===========epoch 198===========
+class_loss:0.5543
+train_acc:0.8437,valid_acc:0.6956,target_acc:0.6763
+total cost time: 1278.4188
+===========epoch 199===========
+class_loss:0.6087
+train_acc:0.8394,valid_acc:0.6994,target_acc:0.6721
+total cost time: 1293.5614
+valid acc: 0.7071
+DG result: 0.6698
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:CORAL
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:3
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.005
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:200
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[3]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-9domain': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+class_loss:1.2336,coral_loss:0.0182,total_loss:1.2518
+train_acc:0.4182,valid_acc:0.3834,target_acc:0.4217
+total cost time: 15.5578
+===========epoch 3===========
+class_loss:1.0231,coral_loss:0.0231,total_loss:1.0462
+train_acc:0.6097,valid_acc:0.5106,target_acc:0.5428
+total cost time: 48.6398
+===========epoch 6===========
+class_loss:0.9243,coral_loss:0.0203,total_loss:0.9446
+train_acc:0.6464,valid_acc:0.5877,target_acc:0.5652
+total cost time: 70.1158
+===========epoch 9===========
+class_loss:0.6947,coral_loss:0.0196,total_loss:0.7143
+train_acc:0.6503,valid_acc:0.6089,target_acc:0.5640
+total cost time: 90.4755
+===========epoch 12===========
+class_loss:0.9575,coral_loss:0.0152,total_loss:0.9727
+train_acc:0.6753,valid_acc:0.6127,target_acc:0.5775
+total cost time: 112.5470
+===========epoch 15===========
+class_loss:0.7721,coral_loss:0.0134,total_loss:0.7854
+train_acc:0.6975,valid_acc:0.6397,target_acc:0.5887
+total cost time: 133.3508
+===========epoch 18===========
+class_loss:0.8188,coral_loss:0.0150,total_loss:0.8337
+train_acc:0.7043,valid_acc:0.6320,target_acc:0.6092
+total cost time: 154.2611
+===========epoch 21===========
+class_loss:0.9217,coral_loss:0.0106,total_loss:0.9322
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:DANN
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:3
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.005
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:200
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[3]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-9domain': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+class_loss:1.3476,dis_loss:0.9945,total_loss:2.3421
+train_acc:0.4250,valid_acc:0.3372,target_acc:0.3835
+total cost time: 14.1576
+===========epoch 3===========
+class_loss:1.0236,dis_loss:1.0869,total_loss:2.1105
+train_acc:0.5490,valid_acc:0.4740,target_acc:0.4996
+total cost time: 33.8248
+===========epoch 6===========
+class_loss:0.9521,dis_loss:1.0946,total_loss:2.0467
+train_acc:0.5996,valid_acc:0.5145,target_acc:0.5116
+total cost time: 53.3712
+===========epoch 9===========
+class_loss:0.9405,dis_loss:1.0330,total_loss:1.9735
+train_acc:0.6483,valid_acc:0.5376,target_acc:0.5463
+total cost time: 72.2112
+===========epoch 12===========
+class_loss:1.1492,dis_loss:1.0827,total_loss:2.2319
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:GroupDRO
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:3
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.005
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:200
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[3]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-9domain': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+group_loss:1.2358
+train_acc:0.4293,valid_acc:0.3911,target_acc:0.4209
+total cost time: 14.8271
+===========epoch 3===========
+group_loss:1.0735
+train_acc:0.5745,valid_acc:0.4913,target_acc:0.5120
+total cost time: 34.9201
+===========epoch 6===========
+group_loss:0.9419
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:Mixup
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:3
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.005
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:200
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[3]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-9domain': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+class_loss:1.2615
+train_acc:0.4226,valid_acc:0.3892,target_acc:0.4113
+total cost time: 18.8751
+===========epoch 3===========
+class_loss:1.0672
+Traceback (most recent call last):
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+Traceback (most recent call last):
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/runpy.py", line 85, in _run_code
+    "__main__", mod_spec)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+      File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/__main__.py", line 39, in <module>
+exec(code, run_globals)
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/__main__.py", line 39, in <module>
+        cli.main()
+cli.main()  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 430, in main
+
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 430, in main
+    run()
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 284, in run_file
+    run()    
+runpy.run_path(target, run_name="__main__")  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 284, in run_file
+
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 322, in run_path
+        runpy.run_path(target, run_name="__main__")pkg_name=pkg_name, script_name=fname)
+
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 322, in run_path
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 136, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    pkg_name=pkg_name, script_name=fname)
+      File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 136, in _run_module_code
+exec(code, run_globals)
+  File "/data2/liangzilin/datasets/liangzilin/DeepDG/train.py", line 156, in <module>
+    mod_name, mod_spec, pkg_name, script_name)    
+algorithm, eval_loaders[i]) for i in eval_name_dict[item]]))  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+
+  File "/data2/liangzilin/datasets/liangzilin/DeepDG/train.py", line 156, in <listcomp>
+        exec(code, run_globals)algorithm, eval_loaders[i]) for i in eval_name_dict[item]]))
+
+  File "/data2/liangzilin/datasets/liangzilin/DeepDG/train.py", line 156, in <module>
+  File "/data2/liangzilin/datasets/liangzilin/DeepDG/alg/modelopera.py", line 24, in accuracy
+    for data in loader:    
+algorithm, eval_loaders[i]) for i in eval_name_dict[item]]))  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 359, in __iter__
+
+  File "/data2/liangzilin/datasets/liangzilin/DeepDG/train.py", line 156, in <listcomp>
+        algorithm, eval_loaders[i]) for i in eval_name_dict[item]]))return self._get_iterator()
+
+  File "/data2/liangzilin/datasets/liangzilin/DeepDG/alg/modelopera.py", line 24, in accuracy
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 305, in _get_iterator
+    for data in loader:
+    return _MultiProcessingDataLoaderIter(self)  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 918, in __init__
+    data = self._next_data()
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1186, in _next_data
+    w.start()
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/multiprocessing/process.py", line 112, in start
+    self._popen = self._Popen(self)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/multiprocessing/context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/multiprocessing/context.py", line 277, in _Popen
+    idx, data = self._get_data()
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1152, in _get_data
+    return Popen(process_obj)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/multiprocessing/popen_fork.py", line 20, in __init__
+    self._launch(process_obj)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/multiprocessing/popen_fork.py", line 70, in _launch
+    self.pid = os.fork()
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydev_bundle/pydev_monkey.py", line 956, in new_fork
+    success, data = self._try_get_data()
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 990, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/multiprocessing/queues.py", line 104, in get
+    _on_forked_process(setup_tracing=apply_arg_patch and not is_subprocess_fork)
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/_pydev_bundle/pydev_monkey.py", line 232, in _on_forked_process
+    pydevd.settrace_forked(setup_tracing=setup_tracing)
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 3142, in settrace_forked
+    if not self._poll(timeout):
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/multiprocessing/connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/multiprocessing/connection.py", line 414, in _poll
+    r = wait([self], timeout)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/multiprocessing/connection.py", line 921, in wait
+    ready = selector.select(timeout)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/selectors.py", line 415, in select
+    client_access_token=client_access_token,
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 2837, in settrace
+    notify_stdin=notify_stdin,
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 2929, in _locked_settrace
+    py_db.wait_for_ready_to_run()
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2023.20.0/pythonFiles/lib/python/debugpy/_vendored/pydevd/pydevd.py", line 838, in wait_for_ready_to_run
+    self._py_db_command_thread_event.wait(0.1)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/multiprocessing/util.py", line 357, in _exit_function
+    p.join()
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/multiprocessing/process.py", line 138, in join
+    assert self._parent_pid == os.getpid(), 'can only join a child process'
+AssertionError: can only join a child process
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/multiprocessing/popen_fork.py", line 28, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 3660509) is killed by signal: Terminated. 
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:MLDG
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:3
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.005
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:200
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[3]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-9domain': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+total_loss:2.2960
+train_acc:0.4134,valid_acc:0.3950,target_acc:0.3900
+total cost time: 17.1782
+===========epoch 3===========
+total_loss:1.8585
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:RSC
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:3
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.005
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:200
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[3]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-9domain': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+class_loss:1.3405
+train_acc:0.4438,valid_acc:0.3988,target_acc:0.4240
+total cost time: 14.2028
+===========epoch 3===========
+class_loss:1.0587
+train_acc:0.5914,valid_acc:0.5106,target_acc:0.5231
+total cost time: 33.3234
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:ERM
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:BCICIV-2a-3domain
+data_dir:./data/BCIC_IV_2a/data2_4Class_filtered/
+dis_hidden:256
+disttype:2-norm
+gpu_id:3
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.005
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:200
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[3]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['123'], ['456'], ['789']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-9domain': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']}
+input_shape:(22, 750)
+num_classes:4
+domain_num:4
+
+===========start training===========
+===========epoch 0===========
+class_loss:1.2701
+train_acc:0.4699,valid_acc:0.4123,target_acc:0.4479
+total cost time: 14.8451
+===========epoch 3===========
+class_loss:1.0681
+train_acc:0.6054,valid_acc:0.5491,target_acc:0.5421
+total cost time: 34.3446
+===========epoch 6===========
+class_loss:0.8937
+train_acc:0.6628,valid_acc:0.6069,target_acc:0.5748
+total cost time: 54.1367
+===========epoch 9===========
+class_loss:0.7717
+train_acc:0.6638,valid_acc:0.6050,target_acc:0.5633
+total cost time: 73.5607
+===========epoch 12===========
+class_loss:0.9242
+train_acc:0.6990,valid_acc:0.6339,target_acc:0.5972
+total cost time: 92.8438
+===========epoch 15===========
+class_loss:0.7817
+train_acc:0.7086,valid_acc:0.6320,target_acc:0.6096
+total cost time: 111.8796
+===========epoch 18===========
+class_loss:0.8915
+train_acc:0.7101,valid_acc:0.6320,target_acc:0.6211
+total cost time: 132.1107
+===========epoch 21===========
+class_loss:0.8898
+train_acc:0.7299,valid_acc:0.6358,target_acc:0.6304
+total cost time: 151.6154
+===========epoch 24===========
+class_loss:0.9294
+train_acc:0.7299,valid_acc:0.6320,target_acc:0.6254
+total cost time: 170.2423
+===========epoch 27===========
+class_loss:0.7293
+train_acc:0.7414,valid_acc:0.6590,target_acc:0.6327
+total cost time: 188.8122
+===========epoch 30===========
+class_loss:0.8521
+train_acc:0.7516,valid_acc:0.6705,target_acc:0.6435
+total cost time: 207.8280
+===========epoch 33===========
+class_loss:0.8472
+train_acc:0.7501,valid_acc:0.6802,target_acc:0.6478
+total cost time: 227.5458
+===========epoch 36===========
+class_loss:0.8360
+train_acc:0.7588,valid_acc:0.6763,target_acc:0.6427
+total cost time: 247.4907
+===========epoch 39===========
+class_loss:0.7430
+train_acc:0.7723,valid_acc:0.6802,target_acc:0.6505
+total cost time: 266.3371
+===========epoch 42===========
+class_loss:0.8771
+train_acc:0.7593,valid_acc:0.6570,target_acc:0.6420
+total cost time: 285.3609
+===========epoch 45===========
+class_loss:0.7698
+train_acc:0.7680,valid_acc:0.6551,target_acc:0.6420
+total cost time: 304.7223
+===========epoch 48===========
+class_loss:0.5363
+train_acc:0.7607,valid_acc:0.6821,target_acc:0.6427
+total cost time: 323.5475
+===========epoch 51===========
+class_loss:0.7878
+train_acc:0.7858,valid_acc:0.6936,target_acc:0.6590
+total cost time: 343.0903
+===========epoch 54===========
+class_loss:0.5849
+train_acc:0.7897,valid_acc:0.6821,target_acc:0.6620
+total cost time: 362.7715
+===========epoch 57===========
+class_loss:0.7235
+train_acc:0.7535,valid_acc:0.6647,target_acc:0.6304
+total cost time: 382.2828
+===========epoch 60===========
+class_loss:0.7956
+train_acc:0.7795,valid_acc:0.6744,target_acc:0.6354
+total cost time: 402.0179
+===========epoch 63===========
+class_loss:0.6802
+train_acc:0.8041,valid_acc:0.6879,target_acc:0.6647
+total cost time: 421.5973
+===========epoch 66===========
+class_loss:0.7061
+train_acc:0.7897,valid_acc:0.6724,target_acc:0.6570
+total cost time: 441.5173
+===========epoch 69===========
+class_loss:0.6777
+train_acc:0.7839,valid_acc:0.6570,target_acc:0.6269
+total cost time: 461.5525
+===========epoch 72===========
+class_loss:0.6175
+train_acc:0.7911,valid_acc:0.6628,target_acc:0.6570
+total cost time: 481.5455
+===========epoch 75===========
+class_loss:0.6222
+train_acc:0.7921,valid_acc:0.6821,target_acc:0.6593
+total cost time: 502.8320
+===========epoch 78===========
+class_loss:0.6954
+train_acc:0.7892,valid_acc:0.6647,target_acc:0.6373
+total cost time: 522.1043
+===========epoch 81===========
+class_loss:0.8146
+train_acc:0.7849,valid_acc:0.6570,target_acc:0.6370
+total cost time: 556.4774
+===========epoch 84===========
+class_loss:0.7231
+train_acc:0.8022,valid_acc:0.6782,target_acc:0.6620
+total cost time: 576.6005
+===========epoch 87===========
+class_loss:0.8038
+train_acc:0.8046,valid_acc:0.6782,target_acc:0.6698
+total cost time: 596.3989
+===========epoch 90===========
+class_loss:0.6307
+train_acc:0.7940,valid_acc:0.6647,target_acc:0.6609
+total cost time: 616.5370
+===========epoch 93===========
+class_loss:0.6865
+train_acc:0.8085,valid_acc:0.6782,target_acc:0.6520
+total cost time: 635.7886
+===========epoch 96===========
+class_loss:0.7950
+train_acc:0.7713,valid_acc:0.6609,target_acc:0.6435
+total cost time: 655.5088
+===========epoch 99===========
+class_loss:0.6605
+train_acc:0.8085,valid_acc:0.6667,target_acc:0.6516
+total cost time: 675.2746
+===========epoch 102===========
+class_loss:0.7246
+train_acc:0.7993,valid_acc:0.6821,target_acc:0.6609
+total cost time: 694.4516
+===========epoch 105===========
+class_loss:0.6325
+train_acc:0.8104,valid_acc:0.6705,target_acc:0.6566
+total cost time: 714.4421
+===========epoch 108===========
+class_loss:0.5471
+train_acc:0.8051,valid_acc:0.6705,target_acc:0.6551
+total cost time: 751.6793
+===========epoch 111===========
+class_loss:0.6918
+train_acc:0.7984,valid_acc:0.6821,target_acc:0.6617
+total cost time: 771.1919
+===========epoch 114===========
+class_loss:0.8060
+train_acc:0.8066,valid_acc:0.6859,target_acc:0.6624
+total cost time: 791.9363
+===========epoch 117===========
+class_loss:0.7234
+train_acc:0.8080,valid_acc:0.6879,target_acc:0.6590
+total cost time: 810.4262
+===========epoch 120===========
+class_loss:0.6081
+train_acc:0.8278,valid_acc:0.6840,target_acc:0.6694
+total cost time: 834.8563
+===========epoch 123===========
+class_loss:0.6302
+train_acc:0.8008,valid_acc:0.6782,target_acc:0.6397
+total cost time: 853.9355
+===========epoch 126===========
+class_loss:0.5777
+train_acc:0.8095,valid_acc:0.6744,target_acc:0.6620
+total cost time: 877.1677
+===========epoch 129===========
+class_loss:0.8550
+train_acc:0.8186,valid_acc:0.6724,target_acc:0.6694
+total cost time: 899.9979
+===========epoch 132===========
+class_loss:0.7622
+train_acc:0.7950,valid_acc:0.6724,target_acc:0.6354
+total cost time: 918.3731
+===========epoch 135===========
+class_loss:0.6064
+train_acc:0.8070,valid_acc:0.6744,target_acc:0.6478
+total cost time: 937.1514
+===========epoch 138===========
+class_loss:0.5684
+train_acc:0.8046,valid_acc:0.6744,target_acc:0.6566
+total cost time: 956.8188
+manually descrease lr
+===========epoch 141===========
+class_loss:0.7636
+train_acc:0.8268,valid_acc:0.6879,target_acc:0.6647
+total cost time: 976.9345
+===========epoch 144===========
+class_loss:0.7214
+train_acc:0.8365,valid_acc:0.6859,target_acc:0.6701
+total cost time: 995.1472
+===========epoch 147===========
+class_loss:0.5833
+train_acc:0.8273,valid_acc:0.6744,target_acc:0.6717
+total cost time: 1014.0135
+===========epoch 150===========
+class_loss:0.5667
+train_acc:0.8427,valid_acc:0.6917,target_acc:0.6813
+total cost time: 1032.5067
+===========epoch 153===========
+class_loss:0.6235
+train_acc:0.8365,valid_acc:0.6821,target_acc:0.6701
+total cost time: 1055.4237
+===========epoch 156===========
+class_loss:0.5153
+train_acc:0.8230,valid_acc:0.6763,target_acc:0.6632
+total cost time: 1074.5694
+===========epoch 159===========
+class_loss:0.7199
+train_acc:0.8370,valid_acc:0.6879,target_acc:0.6678
+total cost time: 1094.5265
+===========epoch 162===========
+class_loss:0.6199
+train_acc:0.8312,valid_acc:0.6859,target_acc:0.6690
+total cost time: 1114.5711
+===========epoch 165===========
+class_loss:0.6122
+train_acc:0.8360,valid_acc:0.6859,target_acc:0.6632
+total cost time: 1132.5353
+===========epoch 168===========
+class_loss:0.6423
+train_acc:0.8413,valid_acc:0.6956,target_acc:0.6694
+total cost time: 1151.3824
+===========epoch 171===========
+class_loss:0.7896
+train_acc:0.8384,valid_acc:0.7071,target_acc:0.6698
+total cost time: 1170.2718
+===========epoch 174===========
+class_loss:0.6338
+train_acc:0.8302,valid_acc:0.6840,target_acc:0.6605
+total cost time: 1188.8130
+===========epoch 177===========
+class_loss:0.5450
+train_acc:0.8350,valid_acc:0.6936,target_acc:0.6682
+total cost time: 1207.9977
+manually descrease lr
+===========epoch 180===========
+class_loss:0.5933
+train_acc:0.8370,valid_acc:0.6840,target_acc:0.6674
+total cost time: 1226.0609
+===========epoch 183===========
+class_loss:0.6437
+train_acc:0.8403,valid_acc:0.6879,target_acc:0.6721
+total cost time: 1245.4739
+===========epoch 186===========
+class_loss:0.6157
+train_acc:0.8408,valid_acc:0.6898,target_acc:0.6682
+total cost time: 1263.9676
+===========epoch 189===========
+class_loss:0.5992
+train_acc:0.8447,valid_acc:0.6994,target_acc:0.6721
+total cost time: 1282.4107
+===========epoch 192===========
+class_loss:0.4893
+train_acc:0.8423,valid_acc:0.6956,target_acc:0.6725
+total cost time: 1301.1487
+===========epoch 195===========
+class_loss:0.4970
+train_acc:0.8418,valid_acc:0.6936,target_acc:0.6721
+total cost time: 1319.7309
+===========epoch 198===========
+class_loss:0.5543
+train_acc:0.8437,valid_acc:0.6956,target_acc:0.6763
+total cost time: 1338.5790
+===========epoch 199===========
+class_loss:0.6087
+train_acc:0.8394,valid_acc:0.6994,target_acc:0.6721
+total cost time: 1352.5148
+valid acc: 0.7071
+DG result: 0.6698
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+=======hyper-parameter used========
+==========================================
+algorithm:DIFEX
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:office-home
+data_dir:./data/OfficeHome/
+dis_hidden:256
+disttype:2-norm
+gpu_id:2
+groupdro_eta:1
+inner_lr:0.01
+lam:1
+layer:bn
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:resnet50
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+steps_per_epoch:100
+domains:['Art', 'Clipart', 'Product', 'Real_World']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:65
+domain_num:4
+
+start training fft teacher net
+epoch: 0, cls loss: 4.3504
+epoch: 100, cls loss: 3.3487
+epoch: 200, cls loss: 3.0946
+epoch: 300, cls loss: 2.7521
+epoch: 400, cls loss: 2.7477
+epoch: 500, cls loss: 2.7651
+epoch: 600, cls loss: 2.4783
+epoch: 700, cls loss: 2.3691
+epoch: 800, cls loss: 2.2940
+epoch: 900, cls loss: 2.4082
+epoch: 1000, cls loss: 2.1011
+epoch: 1100, cls loss: 2.0560
+epoch: 1200, cls loss: 2.1737
+epoch: 1300, cls loss: 1.9422
+epoch: 1400, cls loss: 1.7585
+epoch: 1500, cls loss: 1.5772
+epoch: 1600, cls loss: 1.5318
+epoch: 1700, cls loss: 1.8449
+epoch: 1800, cls loss: 1.6334
+epoch: 1900, cls loss: 1.4597
+epoch: 2000, cls loss: 1.3892
+epoch: 2100, cls loss: 1.4432
+epoch: 2200, cls loss: 1.5241
+epoch: 2300, cls loss: 1.6086
+epoch: 2400, cls loss: 1.2914
+epoch: 2500, cls loss: 1.1781
+epoch: 2600, cls loss: 1.2222
+epoch: 2700, cls loss: 1.4243
+epoch: 2800, cls loss: 1.2676
+epoch: 2900, cls loss: 1.3337
+epoch: 3000, cls loss: 0.9778
+epoch: 3100, cls loss: 1.3595
+epoch: 3200, cls loss: 1.1552
+epoch: 3300, cls loss: 0.7634
+epoch: 3400, cls loss: 1.0289
+epoch: 3500, cls loss: 1.2150
+epoch: 3600, cls loss: 0.8357
+epoch: 3700, cls loss: 0.8187
+epoch: 3800, cls loss: 1.0948
+epoch: 3900, cls loss: 1.0521
+epoch: 4000, cls loss: 0.8278
+epoch: 4100, cls loss: 0.7248
+epoch: 4200, cls loss: 0.9712
+epoch: 4300, cls loss: 0.7212
+epoch: 4400, cls loss: 0.6726
+epoch: 4500, cls loss: 0.8246
+epoch: 4600, cls loss: 0.9274
+epoch: 4700, cls loss: 0.8767
+epoch: 4800, cls loss: 0.8362
+epoch: 4900, cls loss: 0.7814
+epoch: 5000, cls loss: 0.8652
+epoch: 5100, cls loss: 0.7547
+epoch: 5200, cls loss: 0.5167
+epoch: 5300, cls loss: 0.7745
+epoch: 5400, cls loss: 0.6501
+epoch: 5500, cls loss: 0.6357
+epoch: 5600, cls loss: 0.6827
+epoch: 5700, cls loss: 0.6782
+epoch: 5800, cls loss: 0.5924
+epoch: 5900, cls loss: 0.5744
+epoch: 6000, cls loss: 0.7081
+epoch: 6100, cls loss: 0.6754
+epoch: 6200, cls loss: 0.6149
+epoch: 6300, cls loss: 0.7227
+epoch: 6400, cls loss: 0.5366
+epoch: 6500, cls loss: 0.5485
+epoch: 6600, cls loss: 0.5367
+epoch: 6700, cls loss: 0.4133
+epoch: 6800, cls loss: 0.5223
+epoch: 6900, cls loss: 0.6540
+epoch: 7000, cls loss: 0.4796
+epoch: 7100, cls loss: 0.4194
+epoch: 7200, cls loss: 0.6669
+epoch: 7300, cls loss: 0.4616
+epoch: 7400, cls loss: 0.3555
+epoch: 7500, cls loss: 0.6491
+epoch: 7600, cls loss: 0.4107
+epoch: 7700, cls loss: 0.3551
+epoch: 7800, cls loss: 0.5780
+epoch: 7900, cls loss: 0.4679
+epoch: 8000, cls loss: 0.3173
+epoch: 8100, cls loss: 0.3949
+epoch: 8200, cls loss: 0.3839
+epoch: 8300, cls loss: 0.3464
+epoch: 8400, cls loss: 0.2461
+epoch: 8500, cls loss: 0.3286
+epoch: 8600, cls loss: 0.1102
+epoch: 8700, cls loss: 0.1330
+epoch: 8800, cls loss: 0.1673
+epoch: 8900, cls loss: 0.1583
+epoch: 9000, cls loss: 0.0811
+epoch: 9100, cls loss: 0.2583
+epoch: 9200, cls loss: 0.1696
+epoch: 9300, cls loss: 0.0653
+epoch: 9400, cls loss: 0.1640
+epoch: 9500, cls loss: 0.0860
+epoch: 9600, cls loss: 0.1395
+epoch: 9700, cls loss: 0.0952
+epoch: 9800, cls loss: 0.2108
+epoch: 9900, cls loss: 0.1748
+epoch: 10000, cls loss: 0.0677
+epoch: 10100, cls loss: 0.0545
+epoch: 10200, cls loss: 0.1514
+epoch: 10300, cls loss: 0.1829
+epoch: 10400, cls loss: 0.0449
+epoch: 10500, cls loss: 0.1837
+epoch: 10600, cls loss: 0.1211
+epoch: 10700, cls loss: 0.1439
+epoch: 10800, cls loss: 0.1003
+epoch: 10900, cls loss: 0.1407
+epoch: 11000, cls loss: 0.0568
+epoch: 11100, cls loss: 0.1602
+epoch: 11200, cls loss: 0.1109
+epoch: 11300, cls loss: 0.1100
+epoch: 11400, cls loss: 0.1095
+epoch: 11500, cls loss: 0.0774
+epoch: 11600, cls loss: 0.0629
+epoch: 11700, cls loss: 0.0953
+epoch: 11800, cls loss: 0.0941
+epoch: 11900, cls loss: 0.1585
+epoch: 11999, cls loss: 0.0949
+complet time:4532.1838
+===========start training===========
+===========epoch 0===========
+class_loss:0.8306,dist_loss:1.5046,exp_loss:-3.7722,align_loss:0.1755,total_loss:-1.2615
+train_acc:0.7690,valid_acc:0.7341,target_acc:0.5694
+total cost time: 142.9139
+===========epoch 3===========
+class_loss:0.2840,dist_loss:1.0528,exp_loss:-3.9037,align_loss:0.1296,total_loss:-2.4372
+train_acc:0.9068,valid_acc:0.7973,target_acc:0.5686
+total cost time: 387.4455
+===========epoch 6===========
+class_loss:0.1979,dist_loss:0.8785,exp_loss:-3.9394,align_loss:0.1081,total_loss:-2.7549
+train_acc:0.9544,valid_acc:0.8230,target_acc:0.5806
+total cost time: 627.5855
+===========epoch 9===========
+class_loss:0.1106,dist_loss:0.8166,exp_loss:-3.9555,align_loss:0.1537,total_loss:-2.8746
+train_acc:0.9734,valid_acc:0.8272,target_acc:0.5801
+total cost time: 862.3662
+===========epoch 12===========
+class_loss:0.0877,dist_loss:0.7706,exp_loss:-3.9628,align_loss:0.1485,total_loss:-2.9559
+train_acc:0.9821,valid_acc:0.8436,target_acc:0.6007
+total cost time: 1098.8677
+===========epoch 15===========
+class_loss:0.0334,dist_loss:0.7584,exp_loss:-3.9636,align_loss:0.1124,total_loss:-3.0595
+train_acc:0.9873,valid_acc:0.8474,target_acc:0.5871
+total cost time: 1336.6413
+===========epoch 18===========
+class_loss:0.1012,dist_loss:0.7262,exp_loss:-3.9701,align_loss:0.1497,total_loss:-2.9930
+train_acc:0.9856,valid_acc:0.8306,target_acc:0.5760
+total cost time: 1578.9113
+===========epoch 21===========
+class_loss:0.0591,dist_loss:0.6858,exp_loss:-3.9699,align_loss:0.1367,total_loss:-3.0883
+train_acc:0.9896,valid_acc:0.8416,target_acc:0.5900
+total cost time: 1825.0798
+===========epoch 24===========
+class_loss:0.0213,dist_loss:0.6660,exp_loss:-3.9738,align_loss:0.1605,total_loss:-3.1260
+train_acc:0.9887,valid_acc:0.8386,target_acc:0.5707
+total cost time: 2073.1355
+===========epoch 27===========
+class_loss:0.0171,dist_loss:0.6673,exp_loss:-3.9741,align_loss:0.1242,total_loss:-3.1654
+train_acc:0.9901,valid_acc:0.8390,target_acc:0.5608
+total cost time: 2318.4259
+===========epoch 30===========
+class_loss:0.0940,dist_loss:0.6301,exp_loss:-3.9744,align_loss:0.1069,total_loss:-3.1433
+train_acc:0.9913,valid_acc:0.8367,target_acc:0.5694
+total cost time: 2569.3903
+===========epoch 33===========
+class_loss:0.0973,dist_loss:0.6233,exp_loss:-3.9763,align_loss:0.1410,total_loss:-3.1147
+train_acc:0.9917,valid_acc:0.8394,target_acc:0.5674
+total cost time: 2813.0843
+===========epoch 36===========
+class_loss:0.0323,dist_loss:0.5497,exp_loss:-3.9775,align_loss:0.1369,total_loss:-3.2586
+train_acc:0.9916,valid_acc:0.8356,target_acc:0.5534
+total cost time: 3051.3513
+===========epoch 39===========
+class_loss:0.0563,dist_loss:0.5396,exp_loss:-3.9771,align_loss:0.1545,total_loss:-3.2266
+train_acc:0.9924,valid_acc:0.8363,target_acc:0.5731
+total cost time: 3287.0209
+===========epoch 42===========
+class_loss:0.0167,dist_loss:0.5679,exp_loss:-3.9777,align_loss:0.1159,total_loss:-3.2772
+train_acc:0.9906,valid_acc:0.8223,target_acc:0.5567
+total cost time: 3524.6214
+===========epoch 45===========
+class_loss:0.0081,dist_loss:0.5676,exp_loss:-3.9779,align_loss:0.1371,total_loss:-3.2652
+train_acc:0.9930,valid_acc:0.8363,target_acc:0.5534
+total cost time: 3760.9669
+===========epoch 48===========
+class_loss:0.0090,dist_loss:0.5804,exp_loss:-3.9782,align_loss:0.1202,total_loss:-3.2687
+train_acc:0.9912,valid_acc:0.8230,target_acc:0.5571
+total cost time: 3996.0857
+===========epoch 51===========
+class_loss:0.0103,dist_loss:0.5092,exp_loss:-3.9785,align_loss:0.1358,total_loss:-3.3232
+train_acc:0.9921,valid_acc:0.8291,target_acc:0.5509
+total cost time: 4238.1801
+===========epoch 54===========
+class_loss:0.0224,dist_loss:0.5146,exp_loss:-3.9795,align_loss:0.1335,total_loss:-3.3090
+train_acc:0.9916,valid_acc:0.8287,target_acc:0.5451
+total cost time: 4481.7789
+===========epoch 57===========
+class_loss:0.0250,dist_loss:0.5172,exp_loss:-3.9802,align_loss:0.1275,total_loss:-3.3105
+train_acc:0.9925,valid_acc:0.8321,target_acc:0.5620
+total cost time: 4742.9064
+===========epoch 60===========
+class_loss:0.0462,dist_loss:0.5020,exp_loss:-3.9808,align_loss:0.1168,total_loss:-3.3157
+train_acc:0.9933,valid_acc:0.8287,target_acc:0.5443
+total cost time: 4998.2845
+===========epoch 63===========
+class_loss:0.0346,dist_loss:0.4977,exp_loss:-3.9811,align_loss:0.1396,total_loss:-3.3092
+train_acc:0.9928,valid_acc:0.8298,target_acc:0.5159
+total cost time: 5238.9814
+===========epoch 66===========
+class_loss:0.0054,dist_loss:0.5255,exp_loss:-3.9803,align_loss:0.1340,total_loss:-3.3154
+train_acc:0.9924,valid_acc:0.8275,target_acc:0.5426
+total cost time: 5512.5806
+===========epoch 69===========
+class_loss:0.0195,dist_loss:0.5193,exp_loss:-3.9811,align_loss:0.1706,total_loss:-3.2716
+train_acc:0.9923,valid_acc:0.8253,target_acc:0.5534
+total cost time: 5754.6134
+===========epoch 72===========
+class_loss:0.0388,dist_loss:0.4827,exp_loss:-3.9804,align_loss:0.1395,total_loss:-3.3193
+train_acc:0.9916,valid_acc:0.8192,target_acc:0.5385
+total cost time: 6013.4129

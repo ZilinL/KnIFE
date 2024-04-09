@@ -1,0 +1,479 @@
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+out_20240409174408_EEGNet_OpenBMI-6domain_Knife_GYdP8g9C_.txt
+=======hyper-parameter used========
+==========================================
+algorithm:Knife
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:OpenBMI-6domain
+data_dir:./data/OpenBMI/filteredMat/
+dis_hidden:256
+disttype:cos
+gpu_id:6
+groupdro_eta:1
+inner_lr:0.01
+L:0.2
+lam:1
+layer:bn
+lr:0.005
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:200
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[6]
+output:train_output/
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['s001', 's002', 's003', 's004', 's005', 's006', 's007', 's008', 's009'], ['s010', 's011', 's012', 's013', 's014', 's015', 's016', 's017', 's018'], ['s019', 's020', 's021', 's022', 's023', 's024', 's025', 's026', 's027'], ['s028', 's029', 's030', 's031', 's032', 's033', 's034', 's035', 's036'], ['s037', 's038', 's039', 's040', 's041', 's042', 's043', 's044', 's045'], ['s046', 's047', 's048', 's049', 's050', 's051', 's052', 's053', 's054'], ['se001', 'se002', 'se003', 'se004', 'se005', 'se006', 'se007', 'se008', 'se009', 'se010', 'se011', 'se012', 'se013', 'se014', 'se015', 'se016', 'se017', 'se018', 'se019', 'se020', 'se021', 'se022', 'se023', 'se024', 'se025', 'se026', 'se027', 'se028', 'se029', 'se030', 'se031', 'se032', 'se033', 'se034', 'se035', 'se036', 'se037', 'se038', 'se039', 'se040', 'se041', 'se042', 'se043', 'se044', 'se045', 'se046', 'se047', 'se048', 'se049', 'se050', 'se051', 'se052', 'se053', 'se054']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-9domain': [['A1'], ['A2'], ['A3'], ['A4'], ['A5'], ['A6'], ['A7'], ['A8'], ['A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2b-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2b-9domain': [['A1'], ['A2'], ['A3'], ['A4'], ['A5'], ['A6'], ['A7'], ['A8'], ['A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIII-IVa-5domain': [['A1'], ['A2'], ['A3'], ['A4'], ['A5']], 'BCICIV-2a-3domain-EA': [['A1'], ['A2'], ['A3'], ['A4'], ['A5'], ['A6'], ['A7'], ['A8'], ['A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-5domain': [['A1', 'A2'], ['A3', 'A4'], ['A5', 'A6'], ['A7', 'A8'], ['A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'OpenBMI-4domain': [['s001', 's002', 's003', 's004', 's005', 's006', 's007', 's008', 's009', 's010', 's011', 's012', 's013', 's014'], ['s015', 's016', 's017', 's018', 's019', 's020', 's021', 's022', 's023', 's024', 's025', 's026', 's027', 's028'], ['s029', 's030', 's031', 's032', 's033', 's034', 's035', 's036', 's037', 's038', 's039', 's040', 's041', 's042'], ['s043', 's044', 's045', 's046', 's047', 's048', 's049', 's050', 's051', 's052', 's053', 's054'], ['se001', 'se002', 'se003', 'se004', 'se005', 'se006', 'se007', 'se008', 'se009', 'se010', 'se011', 'se012', 'se013', 'se014', 'se015', 'se016', 'se017', 'se018', 'se019', 'se020', 'se021', 'se022', 'se023', 'se024', 'se025', 'se026', 'se027', 'se028', 'se029', 'se030', 'se031', 'se032', 'se033', 'se034', 'se035', 'se036', 'se037', 'se038', 'se039', 'se040', 'se041', 'se042', 'se043', 'se044', 'se045', 'se046', 'se047', 'se048', 'se049', 'se050', 'se051', 'se052', 'se053', 'se054']], 'OpenBMI-6domain': [['s001', 's002', 's003', 's004', 's005', 's006', 's007', 's008', 's009'], ['s010', 's011', 's012', 's013', 's014', 's015', 's016', 's017', 's018'], ['s019', 's020', 's021', 's022', 's023', 's024', 's025', 's026', 's027'], ['s028', 's029', 's030', 's031', 's032', 's033', 's034', 's035', 's036'], ['s037', 's038', 's039', 's040', 's041', 's042', 's043', 's044', 's045'], ['s046', 's047', 's048', 's049', 's050', 's051', 's052', 's053', 's054'], ['se001', 'se002', 'se003', 'se004', 'se005', 'se006', 'se007', 'se008', 'se009', 'se010', 'se011', 'se012', 'se013', 'se014', 'se015', 'se016', 'se017', 'se018', 'se019', 'se020', 'se021', 'se022', 'se023', 'se024', 'se025', 'se026', 'se027', 'se028', 'se029', 'se030', 'se031', 'se032', 'se033', 'se034', 'se035', 'se036', 'se037', 'se038', 'se039', 'se040', 'se041', 'se042', 'se043', 'se044', 'se045', 'se046', 'se047', 'se048', 'se049', 'se050', 'se051', 'se052', 'se053', 'se054']], 'OpenBMI-9domain': [['s001', 's002', 's003', 's004', 's005', 's006'], ['s007', 's008', 's009', 's010', 's011', 's012'], ['s013', 's014', 's015', 's016', 's017', 's018'], ['s019', 's020', 's021', 's022', 's023', 's024'], ['s025', 's026', 's027', 's028', 's029', 's030'], ['s031', 's032', 's033', 's034', 's035', 's036'], ['s037', 's038', 's039', 's040', 's041', 's042'], ['s043', 's044', 's045', 's046', 's047', 's048'], ['s049', 's050', 's051', 's052', 's053', 's054'], ['se001', 'se002', 'se003', 'se004', 'se005', 'se006', 'se007', 'se008', 'se009', 'se010', 'se011', 'se012', 'se013', 'se014', 'se015', 'se016', 'se017', 'se018', 'se019', 'se020', 'se021', 'se022', 'se023', 'se024', 'se025', 'se026', 'se027', 'se028', 'se029', 'se030', 'se031', 'se032', 'se033', 'se034', 'se035', 'se036', 'se037', 'se038', 'se039', 'se040', 'se041', 'se042', 'se043', 'se044', 'se045', 'se046', 'se047', 'se048', 'se049', 'se050', 'se051', 'se052', 'se053', 'se054']], 'SEEDIV-3domain': [['s1', 's2', 's3', 's4', 's5'], ['s6', 's7', 's8', 's9', 's10'], ['s11', 's12', 's13', 's14', 's15'], ['t1', 't2', 't3', 't4', 't5', 't6', 't7', 't8', 't9', 't10', 't11', 't12', 't13', 't14', 't15']]}
+input_shape:(20, 1000)
+num_classes:2
+channels:20
+points:1000
+domain_num:7
+
+start training fft teacher net
+epoch: 0, cls loss: 0.7590
+epoch: 100, cls loss: 0.7070
+epoch: 200, cls loss: 0.7004
+epoch: 300, cls loss: 0.6948
+epoch: 400, cls loss: 0.6861
+epoch: 500, cls loss: 0.6993
+epoch: 600, cls loss: 0.6911
+epoch: 700, cls loss: 0.6991
+epoch: 800, cls loss: 0.6812
+epoch: 900, cls loss: 0.6773
+epoch: 1000, cls loss: 0.6959
+epoch: 1100, cls loss: 0.6879
+epoch: 1200, cls loss: 0.6964
+epoch: 1300, cls loss: 0.6898
+epoch: 1400, cls loss: 0.6725
+epoch: 1500, cls loss: 0.6868
+epoch: 1600, cls loss: 0.6893
+epoch: 1700, cls loss: 0.6909
+epoch: 1800, cls loss: 0.7023
+epoch: 1900, cls loss: 0.6924
+epoch: 2000, cls loss: 0.6901
+epoch: 2100, cls loss: 0.7121
+epoch: 2200, cls loss: 0.6931
+epoch: 2300, cls loss: 0.6933
+epoch: 2400, cls loss: 0.6902
+epoch: 2500, cls loss: 0.6969
+epoch: 2600, cls loss: 0.6948
+epoch: 2700, cls loss: 0.6773
+epoch: 2800, cls loss: 0.6677
+epoch: 2900, cls loss: 0.6933
+epoch: 3000, cls loss: 0.6822
+epoch: 3100, cls loss: 0.7037
+epoch: 3200, cls loss: 0.6921
+epoch: 3300, cls loss: 0.7037
+epoch: 3400, cls loss: 0.6894
+epoch: 3500, cls loss: 0.6671
+epoch: 3600, cls loss: 0.6975
+epoch: 3700, cls loss: 0.7007
+epoch: 3800, cls loss: 0.6975
+epoch: 3900, cls loss: 0.6810
+epoch: 4000, cls loss: 0.6879
+epoch: 4100, cls loss: 0.6737
+epoch: 4200, cls loss: 0.6823
+epoch: 4300, cls loss: 0.6879
+epoch: 4400, cls loss: 0.6776
+epoch: 4500, cls loss: 0.6576
+epoch: 4600, cls loss: 0.6966
+epoch: 4700, cls loss: 0.6811
+epoch: 4800, cls loss: 0.6953
+epoch: 4900, cls loss: 0.6650
+epoch: 5000, cls loss: 0.6762
+epoch: 5100, cls loss: 0.6807
+epoch: 5200, cls loss: 0.6797
+epoch: 5300, cls loss: 0.6705
+epoch: 5400, cls loss: 0.6745
+epoch: 5500, cls loss: 0.6915
+epoch: 5600, cls loss: 0.6602
+epoch: 5700, cls loss: 0.6847
+epoch: 5800, cls loss: 0.6746
+epoch: 5900, cls loss: 0.7028
+epoch: 6000, cls loss: 0.6594
+epoch: 6100, cls loss: 0.6820
+epoch: 6200, cls loss: 0.6889
+epoch: 6300, cls loss: 0.6584
+epoch: 6400, cls loss: 0.6961
+epoch: 6500, cls loss: 0.7055
+epoch: 6600, cls loss: 0.7061
+epoch: 6700, cls loss: 0.6602
+epoch: 6800, cls loss: 0.6812
+epoch: 6900, cls loss: 0.6843
+epoch: 7000, cls loss: 0.6735
+epoch: 7100, cls loss: 0.6696
+epoch: 7200, cls loss: 0.6729
+epoch: 7300, cls loss: 0.6706
+epoch: 7400, cls loss: 0.6714
+epoch: 7500, cls loss: 0.6706
+epoch: 7600, cls loss: 0.6912
+epoch: 7700, cls loss: 0.6781
+epoch: 7800, cls loss: 0.6953
+epoch: 7900, cls loss: 0.6735
+epoch: 8000, cls loss: 0.6771
+epoch: 8100, cls loss: 0.6852
+epoch: 8200, cls loss: 0.6758
+epoch: 8300, cls loss: 0.6569
+epoch: 8400, cls loss: 0.6740
+epoch: 8500, cls loss: 0.6775
+epoch: 8600, cls loss: 0.6753
+epoch: 8700, cls loss: 0.6999
+epoch: 8800, cls loss: 0.6686
+epoch: 8900, cls loss: 0.6714
+epoch: 9000, cls loss: 0.6688
+epoch: 9100, cls loss: 0.6837
+epoch: 9200, cls loss: 0.6675
+epoch: 9300, cls loss: 0.7073
+epoch: 9400, cls loss: 0.6867
+epoch: 9500, cls loss: 0.6761
+epoch: 9600, cls loss: 0.6529
+epoch: 9700, cls loss: 0.6909
+epoch: 9800, cls loss: 0.6659
+epoch: 9900, cls loss: 0.6581
+epoch: 10000, cls loss: 0.6920
+epoch: 10100, cls loss: 0.6652
+epoch: 10200, cls loss: 0.6618
+epoch: 10300, cls loss: 0.6920
+epoch: 10400, cls loss: 0.6599
+epoch: 10500, cls loss: 0.6598
+epoch: 10600, cls loss: 0.6980
+epoch: 10700, cls loss: 0.6572
+epoch: 10800, cls loss: 0.6573
+epoch: 10900, cls loss: 0.6402
+epoch: 11000, cls loss: 0.6669
+epoch: 11100, cls loss: 0.6722
+epoch: 11200, cls loss: 0.6826
+epoch: 11300, cls loss: 0.6559
+epoch: 11400, cls loss: 0.6686
+epoch: 11500, cls loss: 0.6620
+epoch: 11600, cls loss: 0.6928
+epoch: 11700, cls loss: 0.6829
+epoch: 11800, cls loss: 0.6787
+epoch: 11900, cls loss: 0.6862
+epoch: 12000, cls loss: 0.6744
+epoch: 12100, cls loss: 0.6827
+epoch: 12200, cls loss: 0.6641
+epoch: 12300, cls loss: 0.6549
+epoch: 12400, cls loss: 0.6884
+epoch: 12500, cls loss: 0.6856
+epoch: 12600, cls loss: 0.6711
+epoch: 12700, cls loss: 0.6668
+epoch: 12800, cls loss: 0.6740
+epoch: 12900, cls loss: 0.6752
+epoch: 13000, cls loss: 0.6449
+epoch: 13100, cls loss: 0.6312
+epoch: 13200, cls loss: 0.6797
+epoch: 13300, cls loss: 0.6515
+epoch: 13400, cls loss: 0.6945
+epoch: 13500, cls loss: 0.6531
+epoch: 13600, cls loss: 0.6864
+epoch: 13700, cls loss: 0.6575
+epoch: 13800, cls loss: 0.6953
+epoch: 13900, cls loss: 0.6944
+epoch: 14000, cls loss: 0.6671
+epoch: 14100, cls loss: 0.6623
+epoch: 14200, cls loss: 0.6727
+epoch: 14300, cls loss: 0.6803
+epoch: 14400, cls loss: 0.6613
+epoch: 14500, cls loss: 0.6740
+epoch: 14600, cls loss: 0.6514
+epoch: 14700, cls loss: 0.6932
+epoch: 14800, cls loss: 0.6578
+epoch: 14900, cls loss: 0.6678
+epoch: 15000, cls loss: 0.6630
+epoch: 15100, cls loss: 0.6483
+epoch: 15200, cls loss: 0.6627
+epoch: 15300, cls loss: 0.6582
+epoch: 15400, cls loss: 0.6565
+epoch: 15500, cls loss: 0.7063
+epoch: 15600, cls loss: 0.6640
+epoch: 15700, cls loss: 0.6680
+epoch: 15800, cls loss: 0.6522
+epoch: 15900, cls loss: 0.6461
+epoch: 16000, cls loss: 0.6709
+epoch: 16100, cls loss: 0.6302
+epoch: 16200, cls loss: 0.6580
+epoch: 16300, cls loss: 0.6544
+epoch: 16400, cls loss: 0.7022
+epoch: 16500, cls loss: 0.6690
+epoch: 16600, cls loss: 0.6565
+epoch: 16700, cls loss: 0.6705
+epoch: 16800, cls loss: 0.6693
+epoch: 16900, cls loss: 0.6552
+epoch: 17000, cls loss: 0.6570
+epoch: 17100, cls loss: 0.6849
+epoch: 17200, cls loss: 0.6835
+epoch: 17300, cls loss: 0.6603
+epoch: 17400, cls loss: 0.6315
+epoch: 17500, cls loss: 0.6335
+epoch: 17600, cls loss: 0.6676
+epoch: 17700, cls loss: 0.6799
+epoch: 17800, cls loss: 0.6593
+epoch: 17900, cls loss: 0.6640
+epoch: 18000, cls loss: 0.6568
+epoch: 18100, cls loss: 0.6577
+epoch: 18200, cls loss: 0.6768
+epoch: 18300, cls loss: 0.6323
+epoch: 18400, cls loss: 0.6569
+epoch: 18500, cls loss: 0.6557
+epoch: 18600, cls loss: 0.6517
+epoch: 18700, cls loss: 0.6590
+epoch: 18800, cls loss: 0.6533
+epoch: 18900, cls loss: 0.6514
+epoch: 19000, cls loss: 0.6726
+epoch: 19100, cls loss: 0.6824
+epoch: 19200, cls loss: 0.6497
+epoch: 19300, cls loss: 0.6645
+epoch: 19400, cls loss: 0.6338
+epoch: 19500, cls loss: 0.6769
+epoch: 19600, cls loss: 0.6628
+epoch: 19700, cls loss: 0.6515
+epoch: 19800, cls loss: 0.6845
+epoch: 19900, cls loss: 0.6770
+epoch: 19999, cls loss: 0.6682
+complet time:660.3403
+===========start training===========
+===========epoch 0===========
+train_acc:0.5117,valid_acc:0.5120,target_acc:0.5094
+total cost time: 44.1701
+===========epoch 3===========
+train_acc:0.5749,valid_acc:0.5611,target_acc:0.5663
+total cost time: 129.0231
+===========epoch 6===========
+train_acc:0.6848,valid_acc:0.6727,target_acc:0.6779
+total cost time: 213.1763
+===========epoch 9===========
+train_acc:0.7259,valid_acc:0.7181,target_acc:0.7231
+total cost time: 298.4247
+===========epoch 12===========
+train_acc:0.7510,valid_acc:0.7597,target_acc:0.7502
+total cost time: 382.7959
+===========epoch 15===========
+train_acc:0.7859,valid_acc:0.7801,target_acc:0.7770
+total cost time: 466.8257
+===========epoch 18===========
+train_acc:0.7718,valid_acc:0.7634,target_acc:0.7612
+total cost time: 551.2919
+===========epoch 21===========
+train_acc:0.7830,valid_acc:0.7755,target_acc:0.7718
+total cost time: 636.3371
+===========epoch 24===========
+train_acc:0.7933,valid_acc:0.7847,target_acc:0.7790
+total cost time: 721.5124
+===========epoch 27===========
+train_acc:0.7863,valid_acc:0.7838,target_acc:0.7763
+total cost time: 805.4678
+===========epoch 30===========
+train_acc:0.8009,valid_acc:0.7958,target_acc:0.7952
+total cost time: 889.7527
+===========epoch 33===========
+train_acc:0.7997,valid_acc:0.7912,target_acc:0.7856
+total cost time: 975.4408
+===========epoch 36===========
+train_acc:0.8117,valid_acc:0.7944,target_acc:0.7936
+total cost time: 1060.9447
+===========epoch 39===========
+train_acc:0.8072,valid_acc:0.7921,target_acc:0.7919
+total cost time: 1146.5448
+===========epoch 42===========
+train_acc:0.8042,valid_acc:0.8009,target_acc:0.7889
+total cost time: 1231.5459
+===========epoch 45===========
+train_acc:0.7987,valid_acc:0.7912,target_acc:0.7854
+total cost time: 1315.9143
+===========epoch 48===========
+train_acc:0.8119,valid_acc:0.7963,target_acc:0.7918
+total cost time: 1401.5507
+===========epoch 51===========
+train_acc:0.8063,valid_acc:0.7954,target_acc:0.7906
+total cost time: 1486.5948
+===========epoch 54===========
+train_acc:0.8089,valid_acc:0.7926,target_acc:0.7916
+total cost time: 1572.1284
+===========epoch 57===========
+train_acc:0.8105,valid_acc:0.7949,target_acc:0.7903
+total cost time: 1672.2366
+===========epoch 60===========
+train_acc:0.8134,valid_acc:0.7963,target_acc:0.7935
+total cost time: 1757.8426
+===========epoch 63===========
+train_acc:0.8234,valid_acc:0.8074,target_acc:0.8008
+total cost time: 1842.5539
+===========epoch 66===========
+train_acc:0.7954,valid_acc:0.7759,target_acc:0.7735
+total cost time: 1928.0462
+===========epoch 69===========
+train_acc:0.8176,valid_acc:0.7986,target_acc:0.7969
+total cost time: 2013.3678
+===========epoch 72===========
+train_acc:0.8138,valid_acc:0.8005,target_acc:0.7971
+total cost time: 2097.8458
+===========epoch 75===========
+train_acc:0.8174,valid_acc:0.8069,target_acc:0.7935
+total cost time: 2183.2542
+===========epoch 78===========
+train_acc:0.7906,valid_acc:0.7778,target_acc:0.7736
+total cost time: 2268.1896
+===========epoch 81===========
+train_acc:0.7831,valid_acc:0.7722,target_acc:0.7628
+total cost time: 2354.1912
+===========epoch 84===========
+train_acc:0.8251,valid_acc:0.8148,target_acc:0.8095
+total cost time: 2439.1290
+===========epoch 87===========
+train_acc:0.8296,valid_acc:0.8185,target_acc:0.8116
+total cost time: 2525.1929
+===========epoch 90===========
+train_acc:0.8245,valid_acc:0.8130,target_acc:0.8070
+total cost time: 2611.6769
+===========epoch 93===========
+train_acc:0.8237,valid_acc:0.8134,target_acc:0.8057
+total cost time: 2696.7659
+===========epoch 96===========
+train_acc:0.8079,valid_acc:0.8005,target_acc:0.7902
+total cost time: 2782.8055
+===========epoch 99===========
+train_acc:0.8206,valid_acc:0.8042,target_acc:0.8046
+total cost time: 2868.6487
+===========epoch 102===========
+train_acc:0.8259,valid_acc:0.8111,target_acc:0.8071
+total cost time: 2954.3407
+===========epoch 105===========
+train_acc:0.8256,valid_acc:0.8111,target_acc:0.8072
+total cost time: 3039.9559
+===========epoch 108===========
+train_acc:0.8361,valid_acc:0.8125,target_acc:0.8195
+total cost time: 3126.0002
+===========epoch 111===========
+train_acc:0.8226,valid_acc:0.8065,target_acc:0.7995
+total cost time: 3211.2028
+===========epoch 114===========
+train_acc:0.8337,valid_acc:0.8144,target_acc:0.8124
+total cost time: 3296.4446
+===========epoch 117===========
+train_acc:0.8426,valid_acc:0.8199,target_acc:0.8182
+total cost time: 3381.6475
+===========epoch 120===========
+train_acc:0.8352,valid_acc:0.8125,target_acc:0.8153
+total cost time: 3467.5676
+===========epoch 123===========
+train_acc:0.8277,valid_acc:0.8005,target_acc:0.8121
+total cost time: 3552.1645
+===========epoch 126===========
+train_acc:0.8389,valid_acc:0.8255,target_acc:0.8227
+total cost time: 3637.8679
+===========epoch 129===========
+train_acc:0.8236,valid_acc:0.8028,target_acc:0.7980
+total cost time: 3723.8818
+===========epoch 132===========
+train_acc:0.8391,valid_acc:0.8106,target_acc:0.8181
+total cost time: 3809.1139
+===========epoch 135===========
+train_acc:0.8363,valid_acc:0.8185,target_acc:0.8213
+total cost time: 3895.0567
+===========epoch 138===========
+train_acc:0.8281,valid_acc:0.8097,target_acc:0.8104
+total cost time: 3981.8066
+manually descrease lr
+===========epoch 141===========
+train_acc:0.8347,valid_acc:0.8097,target_acc:0.8120
+total cost time: 4067.5992
+===========epoch 144===========
+train_acc:0.8244,valid_acc:0.8069,target_acc:0.8013
+total cost time: 4153.1019
+===========epoch 147===========
+train_acc:0.8350,valid_acc:0.8102,target_acc:0.8119
+total cost time: 4239.0466
+===========epoch 150===========
+train_acc:0.8458,valid_acc:0.8245,target_acc:0.8215
+total cost time: 4324.7461
+===========epoch 153===========
+train_acc:0.8329,valid_acc:0.8097,target_acc:0.8122
+total cost time: 4411.8069
+===========epoch 156===========
+train_acc:0.8427,valid_acc:0.8236,target_acc:0.8202
+total cost time: 4498.1416
+===========epoch 159===========
+train_acc:0.8363,valid_acc:0.8171,target_acc:0.8155
+total cost time: 4584.9229
+===========epoch 162===========
+train_acc:0.8223,valid_acc:0.8005,target_acc:0.7981
+total cost time: 4672.0705
+===========epoch 165===========
+train_acc:0.8388,valid_acc:0.8153,target_acc:0.8156
+total cost time: 4758.8741
+===========epoch 168===========
+train_acc:0.8361,valid_acc:0.8190,target_acc:0.8140
+total cost time: 4847.2573
+===========epoch 171===========
+train_acc:0.8361,valid_acc:0.8139,target_acc:0.8112
+total cost time: 4933.9191
+===========epoch 174===========
+train_acc:0.8521,valid_acc:0.8255,target_acc:0.8256
+total cost time: 5020.0527
+===========epoch 177===========
+train_acc:0.8459,valid_acc:0.8269,target_acc:0.8224
+total cost time: 5133.7293
+manually descrease lr
+===========epoch 180===========
+train_acc:0.8322,valid_acc:0.8111,target_acc:0.8098
+total cost time: 5220.3604
+===========epoch 183===========
+train_acc:0.8390,valid_acc:0.8213,target_acc:0.8171
+total cost time: 5306.8395
+===========epoch 186===========
+train_acc:0.8331,valid_acc:0.8083,target_acc:0.8088
+total cost time: 5392.8951
+===========epoch 189===========
+train_acc:0.8490,valid_acc:0.8241,target_acc:0.8244
+total cost time: 5479.5346
+===========epoch 192===========
+train_acc:0.8286,valid_acc:0.8074,target_acc:0.8069
+total cost time: 5565.0975
+===========epoch 195===========
+train_acc:0.8509,valid_acc:0.8245,target_acc:0.8251
+total cost time: 5651.9440
+===========epoch 198===========
+train_acc:0.8480,valid_acc:0.8255,target_acc:0.8231
+total cost time: 5739.2973
+===========epoch 199===========
+train_acc:0.8461,valid_acc:0.8208,target_acc:0.8219
+total cost time: 5785.5014
+valid acc: 0.8269
+DG result: 0.8224
+mean_acc_subjects: 0.8224
+var_acc_subjects: 0.1137
+acc_per_subjects: [0.82, 0.81, 0.985, 0.855, 0.895, 0.965, 0.82, 0.86, 0.77, 0.635, 0.715, 0.705, 0.67, 0.8, 0.82, 0.855, 0.755, 0.875, 0.825, 0.88, 0.995, 0.845, 0.72, 0.6, 0.98, 0.805, 0.875, 0.955, 0.835, 0.795, 0.845, 0.88, 0.985, 0.525, 0.915, 0.98, 0.975, 0.8, 0.86, 0.74, 0.79, 0.805, 0.895, 0.935, 0.92, 0.875, 0.955, 0.69, 0.89, 0.52, 0.72, 0.86, 0.665, 0.665]

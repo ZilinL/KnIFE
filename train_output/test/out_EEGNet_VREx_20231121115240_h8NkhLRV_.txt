@@ -1,0 +1,32 @@
+No such dataset exists!
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+Traceback (most recent call last):
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 39, in _open_file
+    return open(file_like, mode), True
+FileNotFoundError: [Errno 2] No such file or directory: './data/OpenBMI/filteredMat_cut/s001s002s003s004s005s006s007s008s009s010s011s012s013s014'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train.py", line 116, in <module>
+    train_loaders, eval_loaders = get_eeg_dataloader(args)
+  File "/data3/liangzilin/DeepDG/datautil/getdataloader.py", line 73, in get_eeg_dataloader
+    names[i], i, test_envs=args.test_envs).labels
+  File "/data3/liangzilin/DeepDG/datautil/EEGdataload.py", line 16, in __init__
+    data_mat = loadmat(root_dir+domain_name[i])
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 222, in loadmat
+    with _open_file_context(file_name, appendmat) as f:
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 17, in _open_file_context
+    f, opened = _open_file(file_like, appendmat, mode)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 45, in _open_file
+    return open(file_like, mode), True
+FileNotFoundError: [Errno 2] No such file or directory: './data/OpenBMI/filteredMat_cut/s001s002s003s004s005s006s007s008s009s010s011s012s013s014.mat'

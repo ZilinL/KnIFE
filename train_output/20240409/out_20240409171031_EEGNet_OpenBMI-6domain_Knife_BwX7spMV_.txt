@@ -1,0 +1,304 @@
+Environment:
+	Python: 3.7.11
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 6.2.1
+out_20240409171031_EEGNet_OpenBMI-6domain_Knife_BwX7spMV_.txt
+=======hyper-parameter used========
+==========================================
+algorithm:Knife
+alpha:1
+anneal_iters:500
+batch_size:32
+beta:1
+beta1:0.5
+bottleneck:256
+checkpoint_freq:3
+classifier:linear
+data_file:
+dataset:OpenBMI-6domain
+data_dir:./data/OpenBMI/filteredMat/
+dis_hidden:256
+disttype:cos
+gpu_id:6
+groupdro_eta:1
+inner_lr:0.01
+L:0.2
+lam:1
+layer:bn
+lr:0.005
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:200
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+net:EEGNet
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+schusech:cos
+seed:0
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[6]
+output:train_output/
+weight_decay:0.0005
+steps_per_epoch:100
+domains:[['s001', 's002', 's003', 's004', 's005', 's006', 's007', 's008', 's009'], ['s010', 's011', 's012', 's013', 's014', 's015', 's016', 's017', 's018'], ['s019', 's020', 's021', 's022', 's023', 's024', 's025', 's026', 's027'], ['s028', 's029', 's030', 's031', 's032', 's033', 's034', 's035', 's036'], ['s037', 's038', 's039', 's040', 's041', 's042', 's043', 's044', 's045'], ['s046', 's047', 's048', 's049', 's050', 's051', 's052', 's053', 's054'], ['se001', 'se002', 'se003', 'se004', 'se005', 'se006', 'se007', 'se008', 'se009', 'se010', 'se011', 'se012', 'se013', 'se014', 'se015', 'se016', 'se017', 'se018', 'se019', 'se020', 'se021', 'se022', 'se023', 'se024', 'se025', 'se026', 'se027', 'se028', 'se029', 'se030', 'se031', 'se032', 'se033', 'se034', 'se035', 'se036', 'se037', 'se038', 'se039', 'se040', 'se041', 'se042', 'se043', 'se044', 'se045', 'se046', 'se047', 'se048', 'se049', 'se050', 'se051', 'se052', 'se053', 'se054']]
+eeg_dataset:{'BCICIV-2a-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-9domain': [['A1'], ['A2'], ['A3'], ['A4'], ['A5'], ['A6'], ['A7'], ['A8'], ['A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2b-3domain': [['A1', 'A2', 'A3'], ['A4', 'A5', 'A6'], ['A7', 'A8', 'A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2b-9domain': [['A1'], ['A2'], ['A3'], ['A4'], ['A5'], ['A6'], ['A7'], ['A8'], ['A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIII-IVa-5domain': [['A1'], ['A2'], ['A3'], ['A4'], ['A5']], 'BCICIV-2a-3domain-EA': [['A1'], ['A2'], ['A3'], ['A4'], ['A5'], ['A6'], ['A7'], ['A8'], ['A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'BCICIV-2a-5domain': [['A1', 'A2'], ['A3', 'A4'], ['A5', 'A6'], ['A7', 'A8'], ['A9'], ['E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7', 'E8', 'E9']], 'OpenBMI-4domain': [['s001', 's002', 's003', 's004', 's005', 's006', 's007', 's008', 's009', 's010', 's011', 's012', 's013', 's014'], ['s015', 's016', 's017', 's018', 's019', 's020', 's021', 's022', 's023', 's024', 's025', 's026', 's027', 's028'], ['s029', 's030', 's031', 's032', 's033', 's034', 's035', 's036', 's037', 's038', 's039', 's040', 's041', 's042'], ['s043', 's044', 's045', 's046', 's047', 's048', 's049', 's050', 's051', 's052', 's053', 's054'], ['se001', 'se002', 'se003', 'se004', 'se005', 'se006', 'se007', 'se008', 'se009', 'se010', 'se011', 'se012', 'se013', 'se014', 'se015', 'se016', 'se017', 'se018', 'se019', 'se020', 'se021', 'se022', 'se023', 'se024', 'se025', 'se026', 'se027', 'se028', 'se029', 'se030', 'se031', 'se032', 'se033', 'se034', 'se035', 'se036', 'se037', 'se038', 'se039', 'se040', 'se041', 'se042', 'se043', 'se044', 'se045', 'se046', 'se047', 'se048', 'se049', 'se050', 'se051', 'se052', 'se053', 'se054']], 'OpenBMI-Nocut': [['s001', 's002', 's003', 's004', 's005', 's006', 's007', 's008', 's009', 's010', 's011', 's012', 's013', 's014'], ['s015', 's016', 's017', 's018', 's019', 's020', 's021', 's022', 's023', 's024', 's025', 's026', 's027', 's028'], ['s029', 's030', 's031', 's032', 's033', 's034', 's035', 's036', 's037', 's038', 's039', 's040', 's041', 's042'], ['s043', 's044', 's045', 's046', 's047', 's048', 's049', 's050', 's051', 's052', 's053', 's054'], ['se001', 'se002', 'se003', 'se004', 'se005', 'se006', 'se007', 'se008', 'se009', 'se010', 'se011', 'se012', 'se013', 'se014', 'se015', 'se016', 'se017', 'se018', 'se019', 'se020', 'se021', 'se022', 'se023', 'se024', 'se025', 'se026', 'se027', 'se028', 'se029', 'se030', 'se031', 'se032', 'se033', 'se034', 'se035', 'se036', 'se037', 'se038', 'se039', 'se040', 'se041', 'se042', 'se043', 'se044', 'se045', 'se046', 'se047', 'se048', 'se049', 'se050', 'se051', 'se052', 'se053', 'se054']], 'OpenBMI-6domain': [['s001', 's002', 's003', 's004', 's005', 's006', 's007', 's008', 's009'], ['s010', 's011', 's012', 's013', 's014', 's015', 's016', 's017', 's018'], ['s019', 's020', 's021', 's022', 's023', 's024', 's025', 's026', 's027'], ['s028', 's029', 's030', 's031', 's032', 's033', 's034', 's035', 's036'], ['s037', 's038', 's039', 's040', 's041', 's042', 's043', 's044', 's045'], ['s046', 's047', 's048', 's049', 's050', 's051', 's052', 's053', 's054'], ['se001', 'se002', 'se003', 'se004', 'se005', 'se006', 'se007', 'se008', 'se009', 'se010', 'se011', 'se012', 'se013', 'se014', 'se015', 'se016', 'se017', 'se018', 'se019', 'se020', 'se021', 'se022', 'se023', 'se024', 'se025', 'se026', 'se027', 'se028', 'se029', 'se030', 'se031', 'se032', 'se033', 'se034', 'se035', 'se036', 'se037', 'se038', 'se039', 'se040', 'se041', 'se042', 'se043', 'se044', 'se045', 'se046', 'se047', 'se048', 'se049', 'se050', 'se051', 'se052', 'se053', 'se054']], 'OpenBMI-9domain': [['s001', 's002', 's003', 's004', 's005', 's006'], ['s007', 's008', 's009', 's010', 's011', 's012'], ['s013', 's014', 's015', 's016', 's017', 's018'], ['s019', 's020', 's021', 's022', 's023', 's024'], ['s025', 's026', 's027', 's028', 's029', 's030'], ['s031', 's032', 's033', 's034', 's035', 's036'], ['s037', 's038', 's039', 's040', 's041', 's042'], ['s043', 's044', 's045', 's046', 's047', 's048'], ['s049', 's050', 's051', 's052', 's053', 's054'], ['se001', 'se002', 'se003', 'se004', 'se005', 'se006', 'se007', 'se008', 'se009', 'se010', 'se011', 'se012', 'se013', 'se014', 'se015', 'se016', 'se017', 'se018', 'se019', 'se020', 'se021', 'se022', 'se023', 'se024', 'se025', 'se026', 'se027', 'se028', 'se029', 'se030', 'se031', 'se032', 'se033', 'se034', 'se035', 'se036', 'se037', 'se038', 'se039', 'se040', 'se041', 'se042', 'se043', 'se044', 'se045', 'se046', 'se047', 'se048', 'se049', 'se050', 'se051', 'se052', 'se053', 'se054']], 'SEEDIV-3domain': [['s1', 's2', 's3', 's4', 's5'], ['s6', 's7', 's8', 's9', 's10'], ['s11', 's12', 's13', 's14', 's15'], ['t1', 't2', 't3', 't4', 't5', 't6', 't7', 't8', 't9', 't10', 't11', 't12', 't13', 't14', 't15']]}
+input_shape:(20, 1000)
+num_classes:2
+channels:20
+points:1000
+domain_num:7
+
+start training fft teacher net
+epoch: 0, cls loss: 0.7590
+epoch: 100, cls loss: 0.7070
+epoch: 200, cls loss: 0.7004
+epoch: 300, cls loss: 0.6948
+epoch: 400, cls loss: 0.6861
+epoch: 500, cls loss: 0.6993
+epoch: 600, cls loss: 0.6911
+epoch: 700, cls loss: 0.6991
+epoch: 800, cls loss: 0.6812
+epoch: 900, cls loss: 0.6773
+epoch: 1000, cls loss: 0.6959
+epoch: 1100, cls loss: 0.6879
+epoch: 1200, cls loss: 0.6964
+epoch: 1300, cls loss: 0.6898
+epoch: 1400, cls loss: 0.6725
+epoch: 1500, cls loss: 0.6868
+epoch: 1600, cls loss: 0.6893
+epoch: 1700, cls loss: 0.6909
+epoch: 1800, cls loss: 0.7023
+epoch: 1900, cls loss: 0.6924
+epoch: 2000, cls loss: 0.6901
+epoch: 2100, cls loss: 0.7121
+epoch: 2200, cls loss: 0.6931
+epoch: 2300, cls loss: 0.6933
+epoch: 2400, cls loss: 0.6902
+epoch: 2500, cls loss: 0.6969
+epoch: 2600, cls loss: 0.6948
+epoch: 2700, cls loss: 0.6773
+epoch: 2800, cls loss: 0.6677
+epoch: 2900, cls loss: 0.6933
+epoch: 3000, cls loss: 0.6822
+epoch: 3100, cls loss: 0.7037
+epoch: 3200, cls loss: 0.6921
+epoch: 3300, cls loss: 0.7037
+epoch: 3400, cls loss: 0.6894
+epoch: 3500, cls loss: 0.6671
+epoch: 3600, cls loss: 0.6975
+epoch: 3700, cls loss: 0.7007
+epoch: 3800, cls loss: 0.6975
+epoch: 3900, cls loss: 0.6810
+epoch: 4000, cls loss: 0.6879
+epoch: 4100, cls loss: 0.6737
+epoch: 4200, cls loss: 0.6823
+epoch: 4300, cls loss: 0.6879
+epoch: 4400, cls loss: 0.6776
+epoch: 4500, cls loss: 0.6576
+epoch: 4600, cls loss: 0.6966
+epoch: 4700, cls loss: 0.6811
+epoch: 4800, cls loss: 0.6953
+epoch: 4900, cls loss: 0.6650
+epoch: 5000, cls loss: 0.6762
+epoch: 5100, cls loss: 0.6807
+epoch: 5200, cls loss: 0.6797
+epoch: 5300, cls loss: 0.6705
+epoch: 5400, cls loss: 0.6745
+epoch: 5500, cls loss: 0.6915
+epoch: 5600, cls loss: 0.6602
+epoch: 5700, cls loss: 0.6847
+epoch: 5800, cls loss: 0.6746
+epoch: 5900, cls loss: 0.7028
+epoch: 6000, cls loss: 0.6594
+epoch: 6100, cls loss: 0.6820
+epoch: 6200, cls loss: 0.6889
+epoch: 6300, cls loss: 0.6584
+epoch: 6400, cls loss: 0.6961
+epoch: 6500, cls loss: 0.7055
+epoch: 6600, cls loss: 0.7061
+epoch: 6700, cls loss: 0.6602
+epoch: 6800, cls loss: 0.6812
+epoch: 6900, cls loss: 0.6843
+epoch: 7000, cls loss: 0.6735
+epoch: 7100, cls loss: 0.6696
+epoch: 7200, cls loss: 0.6729
+epoch: 7300, cls loss: 0.6706
+epoch: 7400, cls loss: 0.6714
+epoch: 7500, cls loss: 0.6706
+epoch: 7600, cls loss: 0.6912
+epoch: 7700, cls loss: 0.6781
+epoch: 7800, cls loss: 0.6953
+epoch: 7900, cls loss: 0.6735
+epoch: 8000, cls loss: 0.6771
+epoch: 8100, cls loss: 0.6852
+epoch: 8200, cls loss: 0.6758
+epoch: 8300, cls loss: 0.6569
+epoch: 8400, cls loss: 0.6740
+epoch: 8500, cls loss: 0.6775
+epoch: 8600, cls loss: 0.6753
+epoch: 8700, cls loss: 0.6999
+epoch: 8800, cls loss: 0.6686
+epoch: 8900, cls loss: 0.6714
+epoch: 9000, cls loss: 0.6688
+epoch: 9100, cls loss: 0.6837
+epoch: 9200, cls loss: 0.6675
+epoch: 9300, cls loss: 0.7073
+epoch: 9400, cls loss: 0.6867
+epoch: 9500, cls loss: 0.6761
+epoch: 9600, cls loss: 0.6529
+epoch: 9700, cls loss: 0.6909
+epoch: 9800, cls loss: 0.6659
+epoch: 9900, cls loss: 0.6581
+epoch: 10000, cls loss: 0.6920
+epoch: 10100, cls loss: 0.6652
+epoch: 10200, cls loss: 0.6618
+epoch: 10300, cls loss: 0.6920
+epoch: 10400, cls loss: 0.6599
+epoch: 10500, cls loss: 0.6598
+epoch: 10600, cls loss: 0.6980
+epoch: 10700, cls loss: 0.6572
+epoch: 10800, cls loss: 0.6573
+epoch: 10900, cls loss: 0.6402
+epoch: 11000, cls loss: 0.6669
+epoch: 11100, cls loss: 0.6722
+epoch: 11200, cls loss: 0.6826
+epoch: 11300, cls loss: 0.6559
+epoch: 11400, cls loss: 0.6686
+epoch: 11500, cls loss: 0.6620
+epoch: 11600, cls loss: 0.6928
+epoch: 11700, cls loss: 0.6829
+epoch: 11800, cls loss: 0.6787
+epoch: 11900, cls loss: 0.6862
+epoch: 12000, cls loss: 0.6744
+epoch: 12100, cls loss: 0.6827
+epoch: 12200, cls loss: 0.6641
+epoch: 12300, cls loss: 0.6549
+epoch: 12400, cls loss: 0.6884
+epoch: 12500, cls loss: 0.6856
+epoch: 12600, cls loss: 0.6711
+epoch: 12700, cls loss: 0.6668
+epoch: 12800, cls loss: 0.6740
+epoch: 12900, cls loss: 0.6752
+epoch: 13000, cls loss: 0.6449
+epoch: 13100, cls loss: 0.6312
+epoch: 13200, cls loss: 0.6797
+epoch: 13300, cls loss: 0.6515
+epoch: 13400, cls loss: 0.6945
+epoch: 13500, cls loss: 0.6531
+epoch: 13600, cls loss: 0.6864
+epoch: 13700, cls loss: 0.6575
+epoch: 13800, cls loss: 0.6953
+epoch: 13900, cls loss: 0.6944
+epoch: 14000, cls loss: 0.6671
+epoch: 14100, cls loss: 0.6623
+epoch: 14200, cls loss: 0.6727
+epoch: 14300, cls loss: 0.6803
+epoch: 14400, cls loss: 0.6613
+epoch: 14500, cls loss: 0.6740
+epoch: 14600, cls loss: 0.6514
+epoch: 14700, cls loss: 0.6932
+epoch: 14800, cls loss: 0.6578
+epoch: 14900, cls loss: 0.6678
+epoch: 15000, cls loss: 0.6630
+epoch: 15100, cls loss: 0.6483
+epoch: 15200, cls loss: 0.6627
+epoch: 15300, cls loss: 0.6582
+epoch: 15400, cls loss: 0.6565
+epoch: 15500, cls loss: 0.7063
+epoch: 15600, cls loss: 0.6640
+epoch: 15700, cls loss: 0.6680
+epoch: 15800, cls loss: 0.6522
+epoch: 15900, cls loss: 0.6461
+epoch: 16000, cls loss: 0.6709
+epoch: 16100, cls loss: 0.6302
+epoch: 16200, cls loss: 0.6580
+epoch: 16300, cls loss: 0.6544
+epoch: 16400, cls loss: 0.7022
+epoch: 16500, cls loss: 0.6690
+epoch: 16600, cls loss: 0.6565
+epoch: 16700, cls loss: 0.6705
+epoch: 16800, cls loss: 0.6693
+epoch: 16900, cls loss: 0.6552
+epoch: 17000, cls loss: 0.6570
+epoch: 17100, cls loss: 0.6849
+epoch: 17200, cls loss: 0.6835
+epoch: 17300, cls loss: 0.6603
+epoch: 17400, cls loss: 0.6315
+epoch: 17500, cls loss: 0.6335
+epoch: 17600, cls loss: 0.6676
+epoch: 17700, cls loss: 0.6799
+epoch: 17800, cls loss: 0.6593
+epoch: 17900, cls loss: 0.6640
+epoch: 18000, cls loss: 0.6568
+epoch: 18100, cls loss: 0.6577
+epoch: 18200, cls loss: 0.6768
+epoch: 18300, cls loss: 0.6323
+epoch: 18400, cls loss: 0.6569
+epoch: 18500, cls loss: 0.6557
+epoch: 18600, cls loss: 0.6517
+epoch: 18700, cls loss: 0.6590
+epoch: 18800, cls loss: 0.6533
+epoch: 18900, cls loss: 0.6514
+epoch: 19000, cls loss: 0.6726
+epoch: 19100, cls loss: 0.6824
+epoch: 19200, cls loss: 0.6497
+epoch: 19300, cls loss: 0.6645
+epoch: 19400, cls loss: 0.6338
+epoch: 19500, cls loss: 0.6769
+epoch: 19600, cls loss: 0.6628
+epoch: 19700, cls loss: 0.6515
+epoch: 19800, cls loss: 0.6845
+epoch: 19900, cls loss: 0.6770
+epoch: 19999, cls loss: 0.6682
+complet time:720.0503
+===========start training===========
+===========epoch 0===========
+class_loss:0.6955,dist_loss:0.0684,aug_loss:1.3923,align_loss:0.0039,total_loss:1.1162
+Traceback (most recent call last):
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2024.4.0/python_files/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/__main__.py", line 39, in <module>
+    cli.main()
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2024.4.0/python_files/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 430, in main
+    run()
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2024.4.0/python_files/lib/python/debugpy/adapter/../../debugpy/launcher/../../debugpy/../debugpy/server/cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2024.4.0/python_files/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 322, in run_path
+    pkg_name=pkg_name, script_name=fname)
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2024.4.0/python_files/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 136, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File "/data2/liangzilin/.vscode-server/extensions/ms-python.python-2024.4.0/python_files/lib/python/debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "/data2/liangzilin/datasets/liangzilin/Knife_code_for_Github/train_OpenBMI.py", line 171, in <module>
+  File "/data2/liangzilin/datasets/liangzilin/Knife_code_for_Github/train_OpenBMI.py", line 171, in <listcomp>
+    acc_subjects = acc_tmp[0][1]
+TypeError: accuracy() missing 2 required positional arguments: 'args' and 'item'
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/concurrent/futures/process.py", line 99, in _python_exit
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 1488752) is killed by signal: Terminated. 
+Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/multiprocessing/popen_fork.py", line 28, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+  File "/data2/liangzilin/anaconda3/envs/Pytorch/lib/python3.7/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 1488814) is killed by signal: Terminated. 
