@@ -1,6 +1,7 @@
 # KnIFE：<ins>Kn</ins>owledge Distillation-based Phase <ins>I</ins>nvariant <ins>F</ins>eature <ins>E</ins>xtraction
 
-##Introduction
+## Introduction
+
 The repository contains the implementation of "Domain Generalization for Zero-calibration BCIs with Knowledge Distillation-based Phase Invariant Feature Extraction", which is currently under review.
 
 Knife.py contains the core code of the proposed method, which includes the realization of knowledge distillation framework, Correlation alignment, and spectrum transfer.
