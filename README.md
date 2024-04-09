@@ -1,4 +1,6 @@
 # KnIFE：<ins>Kn</ins>owledge Distillation-based Phase <ins>I</ins>nvariant <ins>F</ins>eature <ins>E</ins>xtraction
+
+##Introduction
 The repository contains the implementation of "Domain Generalization for Zero-calibration BCIs with Knowledge Distillation-based Phase Invariant Feature Extraction", which is currently under review.
 
 Knife.py contains the core code of the proposed method, which includes the realization of knowledge distillation framework, Correlation alignment, and spectrum transfer.
@@ -10,3 +12,5 @@ KnIFE extract domain-invariant features from both intra- and inter-domain viewpo
 1. [BCI competition IV-2a](https://www.bbci.de/competition/iv/#dataset2a)
 2. [BCI competition IV-2b](https://www.bbci.de/competition/iv/#dataset2b)
 4. [OpenBMI](http://gigadb.org/dataset/view/id/100542)
+
+Continuing...
