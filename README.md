@@ -28,6 +28,11 @@ Please request data from the above link.
 
 An example dataset used for train_OpenBMI.py: [OpenBMI_GoogleDrive](https://drive.google.com/drive/folders/1BtFluXOPe8Dk2Yee7zICE9gG7NM8lNwW?usp=sharing)
 
+Put the downloaded OpenBMI data into the data/OpenBMI/filterdMat/.
+
 Note: This dataset is for demo purposes only. For further use of the data, please request for authorization from the original source.
 
-Continuing....
+## Acknowledge
+Thanks to [deepDG](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG), we have compared and validated our method on this toolkit.
+
+To be continued...
