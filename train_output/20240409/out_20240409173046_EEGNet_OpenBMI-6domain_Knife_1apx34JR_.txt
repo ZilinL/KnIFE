@@ -1,9 +1,0 @@
-Environment:
-	Python: 3.7.11
-	PyTorch: 1.10.0
-	Torchvision: 0.11.1
-	CUDA: 10.2
-	CUDNN: 7605
-	NumPy: 1.21.2
-	PIL: 6.2.1
-out_20240409173046_EEGNet_OpenBMI-6domain_Knife_1apx34JR_.txt
