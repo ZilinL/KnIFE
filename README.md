@@ -23,7 +23,7 @@ train_OpenBMI.py: A demo to run Knife on OpenBMI dataset.
 
 Please request data from the above link.
 
-An example dataset used for train_OpenBMIb.py: [OpenBMI_GoogleDrive](https://drive.google.com/drive/folders/1BtFluXOPe8Dk2Yee7zICE9gG7NM8lNwW?usp=sharing)
+An example dataset used for train_OpenBMI.py: [OpenBMI_GoogleDrive](https://drive.google.com/drive/folders/1BtFluXOPe8Dk2Yee7zICE9gG7NM8lNwW?usp=sharing)
 
 Note: This dataset is for demo purposes only. For further use of the data, please request for authorization from the original source.
 
