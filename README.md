@@ -33,6 +33,6 @@ Put the downloaded OpenBMI data into the data/OpenBMI/filterdMat/.
 Note: This dataset is for demo purposes only. For further use of the data, please request for authorization from the original source.
 
 ## Acknowledge
-Thanks to [deepDG](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG), we have compared and validated our method on this toolkit.
+Greant thanks to [deepDG](https://github.com/jindongwang/transferlearning/tree/master/code/DeepDG). We extend our method based on this toolkit and have compared and validated our method on it.
 
 To be continued...
