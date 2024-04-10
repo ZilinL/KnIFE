@@ -21,13 +21,13 @@ def get_args():
     parser = argparse.ArgumentParser(description='DG')
     parser.add_argument('--algorithm', type=str, default="Knife") 
     parser.add_argument('--alpha', type=float, 
-                        default=1, help='DANN dis alpha')
+                        default=1, help='tradeoff hyperparameter used in Knife')
     parser.add_argument('--anneal_iters', type=int,
                         default=500, help='Penalty anneal iters used in VREx')
     parser.add_argument('--batch_size', type=int,
                         default=32, help='batch_size')
     parser.add_argument('--beta', type=float,
-                        default=0.1, help='beta')
+                        default=1, help='beta')
     parser.add_argument('--beta1', type=float, default=0.5,
                         help='Adam hyper-param')
     parser.add_argument('--bottleneck', type=int, default=256)
@@ -50,9 +50,9 @@ def get_args():
     parser.add_argument('--inner_lr', type=float,
                         default=1e-2, help="learning rate used in MLDG")
     parser.add_argument('--L', type=float,
-                        default=0.2, help="tradeoff hyperparameter used in data augment")
+                        default=0.01, help="tradeoff hyperparameter used in data augment")
     parser.add_argument('--lam', type=float,
-                        default=1, help="tradeoff hyperparameter used in VREx")
+                        default=0.1, help="tradeoff hyperparameter used in Knife")
     parser.add_argument('--layer', type=str, default="bn",
                         choices=["ori", "bn"])
     parser.add_argument('--lr', type=float, default=5e-3, help="learning rate")
