@@ -12,6 +12,13 @@ The graphical abstract is shown below:
 ![GA](https://github.com/ZilinL/KnIFE/assets/10232596/5509b800-2ae4-47cc-ab61-00a4d9d19d94)
 
 ## Environments
+        Python: 3.7.11
+        PyTorch: 1.10.0
+        Torchvision: 0.11.1
+        CUDA: 10.2
+        CUDNN: 7605
+        NumPy: 1.21.2
+        PIL: 6.2.1
 ```python
 pip install -r requirements.txt
 ```
