@@ -24,7 +24,10 @@ pip install -r requirements.txt
 ```
 
 ## Run the code
-train_OpenBMI.py: A demo to run Knife on OpenBMI dataset.
+'''python
+python train_OpenBMI.py
+'''
+A demo to run Knife on OpenBMI dataset.
 
 ## Datasets
 1. [BCI competition IV-2a](https://www.bbci.de/competition/iv/#dataset2a)
