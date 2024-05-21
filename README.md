@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The repository contains the implementation of "Domain Generalization for Zero-calibration BCIs with Knowledge Distillation-based Phase Invariant Feature Extraction", which is currently under review.
+The repository contains the implementation of "Domain Generalization for Zero-calibration BCIs with Knowledge Distillation-based Phase Invariant Feature Extraction", which is currently under review. [arxiv](https://arxiv.org/abs/2405.11163)
 
-This is a demo of the proposed Knife, and more complete code will come soon.
+This is a demo of the proposed Knife.
 
 alg/algs/Knife.py contains the core code of the proposed method, which includes the realization of knowledge distillation framework, Correlation alignment, and spectrum transfer.
 The graphical abstract is shown below:
