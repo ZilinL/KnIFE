@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The repository contains the implementation of "Domain Generalization for Zero-calibration BCIs with Knowledge Distillation-based Phase Invariant Feature Extraction", which is currently under review. [[arxiv]](https://arxiv.org/abs/2405.11163)
+The repository contains the implementation of "Domain Generalization for Zero-calibration BCIs with Knowledge Distillation-based Phase Invariant Feature Extraction". [[arxiv]](https://arxiv.org/abs/2405.11163)
 
 This is a demo of the proposed Knife.
 
